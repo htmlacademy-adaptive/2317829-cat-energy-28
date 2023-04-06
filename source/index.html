@@ -1,46 +1,50 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>СAT ENERGI | Интернет-магазин функционального питания для котов</title>
 </head>
 
-<body>
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo logo">
-        <img clss="logo__icon" width="34" height="38" src="img/logo-icon.svg" alt="Маскот логотип CAT ENERGI.">
-        <img class="logo__text" width="101" height="18" src="img/logo-text.svg" alt="Текстовый логотип CAT ENERGI.">
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo">
+        <img clss="main-header__logo-icon" width="34" height="38" src="img/logo-icon.svg"
+          alt="Маскот логотип CAT ENERGI.">
+        <img class="main-header__logo-text" width="101" height="18" src="img/logo-text.svg"
+          alt="Текстовый логотип CAT ENERGI.">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__switch" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--active">Главная</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-navigation__item">
-            <a class="main-navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+        <div class-="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item--active">
+              <a class="main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
 
-  <main>
-    <h1 class="visually-hidden">СAT ENERGI</h1>
+  <main class="page__main">
+    <h1 class="visually-hidden">СAT ENERGI - интернет-магазин функционального питания для котов</h1>
     <section class="promo">
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__slogan">
         Занялся собой? Займись котом!
       </p>
-      <img class="promo__image" width="280" height="270" src="img/promo_banner.png"
-        alt="Функциональное питаеие для котов &#171;Курица&#187; СAT ENERGI PRO.">
+      <img class="promo__image" width="280" height="270" src="img/promo-banner.png"
+        alt="Функциональное питаеие для котов «Курица» СAT ENERGI PRO.">
       <a class="promo__program-selection button" href="form.html">Подобрать программу</a>
     </section>
     <section class="programs">
@@ -107,18 +111,29 @@
           <span class="example__item--description">затрачено времени</span>
         </div>
       </div>
-      <p class="example__expenses">Затраты на питание:
+      <p class="example__expenses">
+        Затраты на питание:
         <span class="example__amount">15 000 руб.</span>
       </p>
       <div class="example__slider slider">
-        <img class="slider_image slider_image--before" src="img/fat-boris.png"  alt="Кот Борис толстый.">
-        <img class="slider_image slider_image--before" src="img/skinny-boris.png"  alt="Кот Борис похудел.">
+        <img class="slider_image slider_image--before" src="img/fat-boris.png" alt="Кот Борис толстый.">
+        <img class="slider_image slider_image--before" src="img/skinny-boris.png" alt="Кот Борис похудел.">
         <div class="slider__range">
           <input type="range" min="0" max="100" value="50">
         </div>
       </div>
       </section>
-
+<section class="invite-cooperation">
+  <div class="invite-cooperation__wrapper">
+    <h2 class="invite-cooperation__title">Приглашаемек сотрудничеству дилеров!</h2>
+    <p class="invite-cooperation__address">
+      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+    </p>
+  </div>
+  <div class="invite-cooperation__map">
+    <img src="img/replaces-map.jpg" width="320" height="362" alt="Заглушка карты.">
+  </div>
+</section>
 
   </main>
   <footer>
