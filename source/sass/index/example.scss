@@ -1,12 +1,14 @@
-.example{
+.example {
   background-color: #eaeaea;
   margin-top: 50px;
 }
+
 .example__wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 25px;
 }
+
 .example__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -17,9 +19,11 @@
   margin: 0;
   margin-bottom: 40px;
 }
-.example__text{
-max-width: 280px;
+
+.example__text {
+  max-width: 280px;
 }
+
 .example__expenses {
   margin: 0;
   margin-left: 40px;

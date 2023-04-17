@@ -20,7 +20,7 @@
 
 }
 
-.instruction__text{
+.instruction__text {
   margin: 0;
   max-width: 200px;
 }
@@ -65,16 +65,3 @@
 .instruction__item--icon-clock::before {
   background-image: url("../img/instruction-clock.svg");
 }
-
-//   &--powder::before {
-//     background-image: url("../img/advantage-powder@1x.png");
-//   }
-
-//   &--dining::before {
-//     background-image: url("../img/advantage-dining@1x.png");
-//   }
-
-//   &--clock::before {
-//     background-image: url("../img/advantage-clock@1x.png");
-//   }
-// }

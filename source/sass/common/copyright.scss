@@ -1,0 +1,22 @@
+.copyright {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__link {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none
+}
+.copyright__name{
+font-size: 16px;
+line-height: 19px;
+color: #444444;
+
+}
