@@ -1,0 +1,23 @@
+.promotion {
+  width: 280px;
+  height: 290px;
+  background-image: url("../img/catalog/cat-box.jpg");
+  background-repeat: no-repeat;
+}
+
+.promotion__icon {
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+
+.promotion__text {
+  margin: 0 auto;
+  margin-top: 105px;
+  width: 160px;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+}
