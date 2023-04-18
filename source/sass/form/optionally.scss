@@ -1,0 +1,59 @@
+.optionally {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.optionally__title {
+  margin: 0;
+  padding-bottom: 35px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.optionally__title::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 3px;
+  background: #68b738;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.optionally__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.optionally__checkbox-item {
+  margin-bottom: 20px;
+}
+
+.optionally__product-name {
+  margin-left: 16px;
+}
+
+.selection__form-required {
+  line-height: 16px;
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  color: #000000;
+  text-align: center;
+}
