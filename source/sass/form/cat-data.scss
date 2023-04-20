@@ -29,8 +29,7 @@
   height: 45px;
   margin-left: 10px;
   margin-bottom: 14px;
-  border: 1px solid #E7E7E7;
-
+  border: 1px solid #e7e7e7;
 }
 
 .cat-data__weight-input {
@@ -48,12 +47,12 @@
   height: 45px;
   margin-left: 9px;
   margin-bottom: 14px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 
 .cat-data__weight-input::-webkit-outer-spin-button,
 .cat-data__weight-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .cat-data__age-input {
@@ -71,10 +70,10 @@
   height: 45px;
   margin-left: 10px;
   margin-bottom: 14px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
 }
 
 .cat-data__age-input::-webkit-outer-spin-button,
 .cat-data__age-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
