@@ -1,0 +1,79 @@
+.cat-data {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.cat-data__name-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 228px;
+  height: 45px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.cat-data__weight-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 207px;
+  height: 45px;
+  margin-left: 9px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.cat-data__weight-input::-webkit-outer-spin-button,
+.cat-data__weight-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.cat-data__age-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 173px;
+  height: 45px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+}
+
+.cat-data__age-input::-webkit-outer-spin-button,
+.cat-data__age-input::-webkit-inner-spin-button {
+  appearance: none;
+}

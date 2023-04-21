@@ -1,0 +1,35 @@
+.invite-cooperation {
+  background-color: #f2f2f2;
+}
+
+.invite-cooperation--index {
+  background-color: #ffffff;
+}
+
+.invite-cooperation__wrapper {
+  display: flex;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.invite-cooperation__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+.invite-cooperation__address {
+  line-height: 20px;
+  margin: 0;
+  margin-left: 25px;
+}

@@ -1,0 +1,36 @@
+.extra-card-item {
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.extra-card-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.extra-card-item__table {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 280px;
+}
+
+.extra-card-item__button {
+  text-decoration: none;
+}
+
+.extra-card-item__feature {
+  padding: 0;
+}
+
+.extra-card-item__value {
+  text-align: right;
+  padding: 0;
+}

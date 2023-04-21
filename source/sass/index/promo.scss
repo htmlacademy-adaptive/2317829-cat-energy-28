@@ -1,0 +1,41 @@
+.promo {
+  padding-top: 27px;
+}
+
+.promo__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.promo__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 29px;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto 3px;
+}
+
+.promo__program-selection {
+  text-decoration: none;
+  max-width: 280px;
+  margin: 0 auto;
+}

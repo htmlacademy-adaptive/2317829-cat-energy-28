@@ -1,0 +1,41 @@
+.results-table {
+  margin-bottom: 20px;
+  max-width: 285px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.results-table__weight,
+.results-table__time {
+  width: 125px;
+  padding-top: 9px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.results-table__value {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.results-table__description {
+  display: block;
+  font-size: 12px;
+  line-height: 100%;
+  width: 85px;
+  background-color: #eaeaea;
+  padding-left: 5px;
+  margin-left: 19px;
+  margin-bottom: -12px;
+  text-transform: lowercase;
+}

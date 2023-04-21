@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+// common blocks
+@import "common/fonts.scss";
+@import "common/global.scss";
+@import "common/visually-hidden.scss";
+@import "common/page.scss";
+@import "common/main-header.scss";
+@import "common/toggle-navigation.scss";
+@import "common/main-navigation.scss";
+@import "common/invite-cooperation.scss";
+@import "common/button";
+@import "common/page-footer.scss";
+@import "common/socials.scss";
+@import "common/copyright.scss";
+@import "common/container.scss";
+
+// main index
+@import "index/page-main.scss";
+@import "index/promo.scss";
+@import "index/programs.scss";
+@import "index/instruction.scss";
+@import "index/example.scss";
+@import "index/results-table.scss";
+@import "index/slider.scss";
+
+// main catalog
+@import "catalog/page-catalog.scss";
+@import "catalog/catalog.scss";
+@import "catalog/card-item.scss";
+@import "catalog/more-items.scss";
+@import "catalog/extra-catalog.scss";
+@import "catalog/extra-card-item.scss";
+@import "catalog/promotion.scss";
+
+// main form
+@import "form/page-form.scss";
+@import "form/selection.scss";
+@import "form/cat-data.scss";
+@import "form/program-target.scss";
+@import "form/owner-info.scss";
+@import "form/comment-area.scss";
+@import "form/optionally.scss";
