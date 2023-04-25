@@ -4,3 +4,9 @@
   width: 19px;
   height: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .toggle-navigation {
+    display: none;
+  }
+}

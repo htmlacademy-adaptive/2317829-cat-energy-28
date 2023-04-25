@@ -4,13 +4,35 @@
   list-style: none;
 }
 
+@media (min-width: $desktop-width) {
+  .programs__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .programs__item {
   position: relative;
   background-color: #f2f2f2;
   margin: 0 auto;
-  max-width: 280px;
+  width: 280px;
   padding: 29px 20px 0;
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    width: 708px;
+    padding: 77px 53px 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item {
+    width: 570px;
+    margin: 0;
+  }
 }
 
 .programs__item::before {
@@ -22,6 +44,25 @@
   height: 50px;
   background-color: #68b738;
   border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item::before {
+    width: 200px;
+    height: 200px;
+    left: auto;
+    right: 62px;
+    top: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item::before {
+    left: 45px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .programs__item::after {
@@ -42,6 +83,20 @@
   padding-left: 70px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__title {
+    font-size: 36px;
+    line-height: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__title {
+    margin-left: 125px;
+  }
+}
+
 .programs__item--slimming::after {
   content: "";
   background-image: url("../img/programs-slimming.svg");
@@ -50,6 +105,27 @@
   top: 22px;
   width: 35px;
   height: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item--slimming::after {
+    width: 141px;
+    height: 194px;
+    right: 92px;
+    background-size: 141px 194px;
+    left: auto;
+    top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item--slimming::after {
+    background-size: 71px 97px;
+    width: 71px;
+    height: 97px;
+    left: 60px;
+    top: 36px;
+  }
 }
 
 .programs__item--muscle-building::after {
@@ -62,6 +138,26 @@
   height: 28px;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__item--muscle-building::after {
+    width: 268px;
+    height: 113px;
+    right: 92px;
+    top: 130px;
+    background-size: 268px 113px;
+    left: 410px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__item--muscle-building::after {
+    background-size: 134px 57px;
+    width: 134px;
+    height: 57px;
+    left: 26px;
+    top: 57px;
+  }
+}
 
 .programs__text {
   margin: 0;
@@ -70,6 +166,21 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+@media (min-width: $tablet-width) {
+  .programs__text {
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__text {
+    max-width: 457px;
+    margin-top: 73px;
+  }
+}
 .programs__link {
   position: relative;
   display: block;
@@ -79,8 +190,15 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 100%;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .programs__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

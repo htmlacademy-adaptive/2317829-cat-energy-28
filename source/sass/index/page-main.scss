@@ -6,6 +6,28 @@
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 302px;
+  min-width: 320px;
+  min-height: 302px;
   z-index: -1;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main::before {
+    display: none;
+  }
+}
+@media (min-width:  $desktop-width) {
+  .page-main::before {
+    display: block;
+    width: 50%;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    left: inherit;
+    background-image: url("../img/index-background-1440.jpg");
+    background-color: #63a73a;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

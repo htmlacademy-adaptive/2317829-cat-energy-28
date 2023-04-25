@@ -1,17 +1,17 @@
 // common blocks
 @import "common/fonts.scss";
 @import "common/global.scss";
+@import "common/variables.scss";
 @import "common/visually-hidden.scss";
 @import "common/page.scss";
-@import "common/main-header.scss";
-@import "common/toggle-navigation.scss";
-@import "common/main-navigation.scss";
-@import "common/invite-cooperation.scss";
-@import "common/button";
-@import "common/page-footer.scss";
-@import "common/socials.scss";
-@import "common/copyright.scss";
 @import "common/container.scss";
+@import "common/button";
+@import "common/invite-cooperation.scss";
+
+// header
+@import "header/main-header.scss";
+@import "header/toggle-navigation.scss";
+@import "header/main-navigation.scss";
 
 // main index
 @import "index/page-main.scss";
@@ -39,3 +39,8 @@
 @import "form/owner-info.scss";
 @import "form/comment-area.scss";
 @import "form/optionally.scss";
+
+// footer
+@import "footer/page-footer.scss";
+@import "footer/socials.scss";
+@import "footer/copyright.scss";
