@@ -7,6 +7,20 @@
   padding-right: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .instruction__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: $desktop-width) {
+  .instruction__wrapper {
+padding-left: 110px;
+padding-right: 110px;
+  }
+}
+
 .instruction__title {
   margin: 0;
   margin-bottom: 40px;
@@ -18,9 +32,26 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .instruction__title {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
+
 .instruction__text {
   margin: 0;
   max-width: 200px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .instruction__text {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 0;
+  }
 }
 
 .instruction__list {
@@ -29,11 +60,53 @@
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .instruction__list {
+    counter-reset: my-counter;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 633px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction__list {
+    width: 1220px
+  }
+}
+
 .instruction__item {
   line-height: 18px;
   padding-left: 80px;
   position: relative;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .instruction__item {
+    padding-left: 0;
+    padding-top: 100px;
+    width: 250px;
+    height: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .instruction__item::after {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 100%;
+    color: #f2f2f2;
+    position: relative;
+    bottom: 211px;
+    left: 117px;
+    z-index: -1;
+  }
 }
 
 .instruction__item::before {
@@ -46,6 +119,14 @@
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .instruction__item::before {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .instruction__item--icon-leaf::before {
@@ -62,4 +143,14 @@
 
 .instruction__item--icon-clock::before {
   background-image: url("../img/instruction-clock.svg");
+}
+
+@media (min-width: $tablet-width) {
+
+  .instruction__item--icon-leaf::before,
+  .instruction__item--icon-powder::before,
+  .instruction__item--icon-eat::before,
+  .instruction__item--icon-clock::before {
+    background-size: 30px 30px;
+  }
 }
