@@ -6,6 +6,13 @@
   justify-content: space-between;
 }
 
+@media (min-width: $tablet-width) {
+  .results-table {
+    max-width: 366px;
+    margin-top: 54px;
+  }
+}
+
 .results-table__weight,
 .results-table__time {
   width: 125px;
@@ -14,6 +21,15 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .results-table__weight,
+  .results-table__time {
+    width: 162px;
+    height: 77px;
+  }
 }
 
 .results-table__value {
@@ -28,6 +44,13 @@
   margin-top: 8px;
 }
 
+@media (min-width: $tablet-width) {
+  .results-table__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .results-table__description {
   display: block;
   font-size: 12px;
@@ -38,4 +61,20 @@
   margin-left: 19px;
   margin-bottom: -12px;
   text-transform: lowercase;
+}
+
+@media (min-width: $tablet-width) {
+  .results-table__description {
+    background-color: #ffffff;
+    width: 130px;
+    font-size: 14px;
+    margin-top: 11px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .results-table__description {
+    background-color: #eaeaea;
+  }
 }

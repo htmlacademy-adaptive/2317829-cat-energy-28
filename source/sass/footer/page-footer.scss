@@ -2,9 +2,48 @@
   background-color: #f2f2f2;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 147px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    height: 169px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 128px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 0;
+  }
+}
+
 .page-footer__logo-link {
   padding-top: 40px;
   padding-bottom: 16px;
   text-align: center;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo-link {
+    padding: 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-footer__logo-icon {
+    min-width: 142px;
+  }
 }
