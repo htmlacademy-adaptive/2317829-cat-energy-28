@@ -26,8 +26,9 @@
   line-height: 19px;
   color: #444444;
 }
+
 @media (min-width: $tablet-width) {
-.copyright__name{
-margin-right: 28px;
-}
+  .copyright__name {
+    margin-right: 28px;
+  }
 }

@@ -14,10 +14,11 @@
     margin: 0 auto;
   }
 }
+
 @media (min-width: $desktop-width) {
   .instruction__wrapper {
-padding-left: 110px;
-padding-right: 110px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 

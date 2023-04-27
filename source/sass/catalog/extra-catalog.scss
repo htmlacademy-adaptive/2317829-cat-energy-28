@@ -13,16 +13,18 @@
   line-height: 100%;
   color: #000000;
   border-bottom: 1px solid #e6e6e6;
+  position: relative;
 }
 
 .extra-catalog__title::after {
   content: "";
   position: absolute;
-  width: 100vw;
   height: 3px;
-  background: #68b738;
-  margin-left: 20px;
-  margin-top: 13px;
+  background-color: #68b738;
+  top: 13px;
+  width: 20%;
+  left: 90%;
+  z-index: -1;
 }
 
 .extra-catalog__list {
