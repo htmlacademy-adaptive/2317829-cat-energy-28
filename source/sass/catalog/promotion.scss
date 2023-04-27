@@ -5,10 +5,52 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .promotion {
+    height: 200px;
+    margin-top: 70px;
+    background-image: none;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion {
+    background-image: url("../img/catalog/cat-box.jpg");
+    background-repeat: no-repeat;
+    height: 290px;
+    width: 245px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promotion__wrapper {
+    background-image: url("../img/catalog/cat-box-768.jpg");
+    width: 708px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion__wrapper {
+    background-image: none;
+    width: 245px;
+    height: 290px;
+  }
+}
+
 .promotion__icon {
   position: relative;
-  left: 80px;
+  left: 100px;
   top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .promotion__icon {
+    top: 60px;
+    left: 80px;
+  }
 }
 
 .promotion__text {
@@ -20,4 +62,20 @@
   display: block;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .promotion__text {
+    margin-top: -15px;
+    margin-right: 100px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promotion__text {
+    margin: 0 auto;
+    margin-top: 105px;
+    text-align: center;
+  }
 }
