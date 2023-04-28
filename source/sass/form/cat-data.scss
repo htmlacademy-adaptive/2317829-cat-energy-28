@@ -14,6 +14,13 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-width) {
+  .cat-data {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .cat-data__name-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -32,6 +39,21 @@
   border: 1px solid #e7e7e7;
 }
 
+@media (min-width: $tablet-width) {
+  .cat-data__name-input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 570px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__name-input {
+    width: 509px;
+  }
+}
+
 .cat-data__weight-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -48,6 +70,21 @@
   margin-left: 9px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data__weight-input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 542px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__weight-input {
+    width: 481px;
+  }
 }
 
 .cat-data__weight-input::-webkit-outer-spin-button,
@@ -71,6 +108,29 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data__name-input,
+  .cat-data__weight-input,
+  .cat-data__age-input {
+    margin-bottom: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cat-data__age-input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 500px;
+    height: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-data__age-input {
+    width: 439px;
+  }
 }
 
 .cat-data__age-input::-webkit-outer-spin-button,

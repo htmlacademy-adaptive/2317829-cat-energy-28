@@ -16,7 +16,8 @@
     display: none;
   }
 }
-@media (min-width:  $desktop-width) {
+
+@media (min-width: $desktop-width) {
   .page-main::before {
     display: block;
     width: 50%;

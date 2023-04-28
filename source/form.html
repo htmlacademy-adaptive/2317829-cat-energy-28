@@ -42,49 +42,61 @@
         </p>
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="get">
           <h2 class="visually-hidden">Форма подбора программы</h2>
-          <fieldset class="selection__cat-data cat-data">
-            <legend class="visually-hidden">Информация о коте</legend>
-            <label class="cat-data__name" for="cat-name">Имя:*
-              <input class="cat-data__name-input" type="text" name="Cat name" id="cat-name" placeholder="Барсик" required>
-            </label>
-            <label class="cat-data__weight" for="cat-weight">Вес (кг):*
-              <input class="cat-data__weight-input" type="number" name="Cat weight" id="cat-weight" min="0" max="25" placeholder="7" required>
-            </label>
-            <label class="cat-data__age" for="cat-age">Возраст (лет):
-              <input class="cat-data__age-input" type="number" name="Cat age" id="cat-age" min="0" max="30" placeholder="7">
-            </label>
-          </fieldset>
-          <fieldset class="selection__program-target program-target">
-            <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="program-target__radio-list">
-              <li class="program-target__radio-item">
-                <label class="program-target__slim" for="program-target-slim">
-                  <input class="program-target__input" type="radio" name="Program target" id="program-target-slim" value="Slim" checked>
-                  <span class="program-target__name">Похудение</span>
-                </label>
-              </li>
-              <li class="program-target__radio-item">
-                <label class="program-target__pro" for="program-target-pro">
-                  <input class="program-target__input" type="radio" name="Program target" id="program-target-pro" value="Pro">
-                  <span class="program-target__name">Набор массы</span>
-                </label>
-              </li>
-              <li class="program-target__radio-item">
-                <label class="program-target__advice" for="program-target-advice">
-                  <input class="program-target__input" type="radio" name="Program target" id="program-target-advice" value="Advice">
-                  <span class="program-target__name">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="selection__field-coupler">
+            <fieldset class="selection__cat-data cat-data">
+              <legend class="visually-hidden">Информация о коте</legend>
+              <label class="cat-data__name" for="cat-name">Имя:*
+                <input class="cat-data__name-input" type="text" name="Cat name" id="cat-name" placeholder="Барсик"
+                  required>
+              </label>
+              <label class="cat-data__weight" for="cat-weight">Вес (кг):*
+                <input class="cat-data__weight-input" type="number" name="Cat weight" id="cat-weight" min="0" max="25"
+                  placeholder="7" required>
+              </label>
+              <label class="cat-data__age" for="cat-age">Возраст (лет):
+                <input class="cat-data__age-input" type="number" name="Cat age" id="cat-age" min="0" max="30"
+                  placeholder="7">
+              </label>
+            </fieldset>
+            <fieldset class="selection__program-target program-target">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="program-target__radio-list">
+                <li class="program-target__radio-item">
+                  <label class="program-target__slim" for="program-target-slim">
+                    <input class="program-target__input" type="radio" name="Program target" id="program-target-slim"
+                      value="Slim" checked>
+                    <span class="program-target__name">Похудение</span>
+                  </label>
+                </li>
+                <li class="program-target__radio-item">
+                  <label class="program-target__pro" for="program-target-pro">
+                    <input class="program-target__input" type="radio" name="Program target" id="program-target-pro"
+                      value="Pro">
+                    <span class="program-target__name">Набор массы</span>
+                  </label>
+                </li>
+                <li class="program-target__radio-item">
+                  <label class="program-target__advice" for="program-target-advice">
+                    <input class="program-target__input" type="radio" name="Program target" id="program-target-advice"
+                      value="Advice">
+                    <span class="program-target__name">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="selection__owner-info owner-info">
             <legend class="owner-info__title">Контактные данные (владельца кота)</legend>
-            <label class="owner-info__email" for="owner-info-email">E-mail:*
-              <input class="owner-info__email-input" type="email" name="E-mail" id="owner-info-email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="owner-info__telephone" for="owner-info-telephone">Телефон:*
-              <input class="owner-info__telephone-input" type="tel" name="Phone" id="owner-info-telephone" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="owner-info__input-coupler">
+              <label class="owner-info__email" for="owner-info-email">E-mail:*
+                <input class="owner-info__email-input" type="email" name="E-mail" id="owner-info-email"
+                  placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="owner-info__telephone" for="owner-info-telephone">Телефон:*
+                <input class="owner-info__telephone-input" type="tel" name="Phone" id="owner-info-telephone"
+                  placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
           <fieldset class="selection__comment-area comment-area">
             <legend class="comment-area__title">Комментарий</legend>
@@ -137,8 +149,10 @@
           <span>Санкт-Петербург</span>
         </p>
       </div>
-      <div class="invite-cooperation__map container">
-        <img src="img/replaces-map.jpg" width="320" height="362" alt="Заглушка карты.">
+      <div class="invite-cooperation__map">
+        <iframe class="invite-cooperation__google-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9191.016012052718!2d30.31261095329799!3d59.93706571329095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1682501822185!5m2!1sru!2sth">
+        </iframe>
       </div>
     </section>
   </main>

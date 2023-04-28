@@ -18,9 +18,12 @@
   .promotion {
     background-image: url("../img/catalog/cat-box.jpg");
     background-repeat: no-repeat;
-    height: 290px;
+    background-position: right;
+    background-size: cover;
     width: 245px;
+    height: 290px;
     margin-bottom: 85px;
+    margin-top: 80px;
   }
 }
 

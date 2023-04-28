@@ -15,25 +15,85 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-width) {
+  .owner-info {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 65px;
+  }
+}
+
 .owner-info__title {
   margin: 0;
-  padding-bottom: 35px;
+  width: 186px;
+  margin-bottom: 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   color: #000000;
   text-transform: none;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-info__title {
+    width: 518px;
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 76px;
+  }
 }
 
 .owner-info__title::after {
   content: "";
   position: absolute;
-  width: 100vw;
+  display: flex;
   height: 3px;
-  background: #68b738;
-  margin-left: 45px;
-  margin-top: -8px;
+  background-color: #68b738;
+  top: 15px;
+  width: 100vw;
+  left: 100%;
+  margin-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-info__title::after {
+    top: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .owner-info__title::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    height: 3px;
+    background-color: #68b738;
+    top: 22px;
+    width: 100vw;
+    right: calc(100% + 2px);
+    margin-right: 20px;
+  }
+}
+
+.owner-info__input-coupler {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-info__input-coupler {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-info__input-coupler {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .owner-info__email-input {
@@ -54,6 +114,22 @@
   border: 1px solid #e7e7e7;
 }
 
+@media (min-width: $tablet-width) {
+  .owner-info__email-input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 548px;
+    height: 52px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-info__email-input {
+    width: 486px;
+  }
+}
+
 .owner-info__telephone-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -70,4 +146,20 @@
   margin-left: 8px;
   margin-bottom: 25px;
   border: 1px solid #e7e7e7;
+}
+
+@media (min-width: $tablet-width) {
+  .owner-info__telephone-input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 529px;
+    height: 52px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-info__telephone-input {
+    width: 467px;
+  }
 }

@@ -73,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .instruction__list {
-    width: 1220px
+    width: 1220px;
   }
 }
 
@@ -147,7 +147,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .instruction__item--icon-leaf::before,
   .instruction__item--icon-powder::before,
   .instruction__item--icon-eat::before,

@@ -5,6 +5,13 @@
 @media (min-width: $tablet-width) {
   .invite-cooperation {
     height: 400px;
+    margin-bottom: 132px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .invite-cooperation {
+    margin-bottom: 0;
   }
 }
 

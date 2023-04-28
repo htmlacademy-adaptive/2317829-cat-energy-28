@@ -1,9 +1,10 @@
 .promo {
   padding-top: 27px;
 }
+
 @media (min-width: $desktop-width) {
   .promo {
-    max-height: 660px ;
+    max-height: 660px;
   }
 }
 
@@ -85,9 +86,6 @@
   max-width: 280px;
   margin: 0 auto;
 }
-
-
-
 
 @media (min-width: $tablet-width) {
   .promo__program-selection {
