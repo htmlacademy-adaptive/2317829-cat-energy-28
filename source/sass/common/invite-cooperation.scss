@@ -1,16 +1,12 @@
 .invite-cooperation {
   background-color: #f2f2f2;
-}
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation {
+  @media (min-width: $tablet-width) {
     height: 400px;
     margin-bottom: 132px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .invite-cooperation {
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }
@@ -28,18 +24,14 @@
   margin-right: auto;
   padding-top: 25px;
   margin-bottom: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation__wrapper {
+  @media (min-width: $tablet-width) {
     width: 768px;
     display: flex;
     justify-content: space-between;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .invite-cooperation__wrapper {
+  @media (min-width: $desktop-width) {
     position: relative;
     right: 330px;
     top: 114px;
@@ -50,6 +42,7 @@
   }
 }
 
+
 .invite-cooperation__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -59,10 +52,8 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation__title {
+  @media (min-width: $tablet-width) {
     width: 155px;
     font-size: 20px;
     line-height: 26px;
@@ -73,26 +64,22 @@
   line-height: 20px;
   margin: 0;
   margin-left: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation__address {
+  @media (min-width: $tablet-width) {
     width: 160px;
     margin: 0;
     text-align: right;
     font-size: 16px;
     line-height: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .invite-cooperation__address {
+  @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation__address span {
+.invite-cooperation__address span {
+  @media (min-width: $tablet-width) {
     display: block;
     margin-top: 18px;
   }
@@ -103,16 +90,14 @@
   width: 100%;
   min-width: 320px;
   height: 362px;
-}
 
-@media (min-width: $tablet-width) {
-  .invite-cooperation__google-map {
+  @media (min-width: $tablet-width) {
     min-height: 400px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .invite-cooperation__map {
+.invite-cooperation__map {
+  @media (min-width: $desktop-width) {
     position: relative;
     bottom: 223px;
   }

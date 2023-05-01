@@ -2,18 +2,14 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__wrapper {
+  @media (min-width: $tablet-width) {
     padding-top: 65px;
     padding-left: 68px;
     padding-right: 68px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .selection__wrapper {
+  @media (min-width: $desktop-width) {
     padding-top: 73px;
     padding-left: 110px;
     padding-right: 110px;
@@ -28,10 +24,8 @@
   font-weight: 400;
   line-height: 100%;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-bottom: 56px;
   }
@@ -48,10 +42,8 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 39px;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__text {
+  @media (min-width: $tablet-width) {
     width: 323px;
     font-size: 20px;
     line-height: 30px;
@@ -60,35 +52,29 @@
 
 .selection__form-submit-wrapper {
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__form-submit-wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 533px;
     margin-top: 15px;
     margin-bottom: 72px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .selection__form-submit-wrapper {
+  @media (min-width: $desktop-width) {
     width: 826px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .selection__form-submit {
+.selection__form-submit {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 100%;
     width: 282px;
     height: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .selection__form-submit {
+  @media (min-width: $desktop-width) {
     width: 568px;
   }
 }
@@ -100,10 +86,8 @@
   margin-bottom: 32px;
   color: #000000;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .selection__form-required {
+  @media (min-width: $tablet-width) {
     margin-top: 15px;
     margin-bottom: 0;
     font-size: 16px;
@@ -113,10 +97,8 @@
 
 .selection__field-coupler {
   display: block;
-}
 
-@media (min-width: $desktop-width) {
-  .selection__field-coupler {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }

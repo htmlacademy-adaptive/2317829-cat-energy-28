@@ -1,29 +1,16 @@
 .extra-card-item {
   padding-bottom: 18px;
   border-bottom: 1px solid #e6e6e6;
-}
 
-.extra-card-item:first-child {
-  border-top: 1px solid #ededed;
-}
-
-@media (min-width: $tablet-width) {
-  .extra-card-item {
+  @media (min-width: $tablet-width) {
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
     padding-left: 37px;
     padding-right: 37px;
     padding-bottom: 28px;
   }
 
-  .extra-card-item:first-child {
-    border-top: 1px solid #ededed;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .extra-card-item {
+  @media (min-width: $desktop-width) {
     width: 896px;
     display: flex;
     justify-content: space-between;
@@ -31,6 +18,10 @@
     border-left: 0;
     border-right: 0;
   }
+}
+
+.extra-card-item:first-child {
+  border-top: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,10 +43,8 @@
   margin: 0;
   margin-top: 15px;
   margin-bottom: 15px;
-}
 
-@media (min-width: $tablet-width) {
-  .extra-card-item__title {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -66,34 +55,23 @@
   margin-top: 15px;
   margin-bottom: 15px;
   width: 280px;
-}
 
-@media (min-width: $tablet-width) {
-  .extra-card-item__table {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     width: 223px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .extra-card-item__table {
+  @media (min-width: $desktop-width) {
     width: 300px;
   }
 }
 
 .extra-card-item__button {
   text-decoration: none;
-}
 
-@media (min-width: $desktop-width) {
-  .extra-card-item__button {
+  @media (min-width: $desktop-width) {
     width: 244px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .extra-card-item__button {
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -101,10 +79,8 @@
 
 .extra-card-item__feature {
   padding: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .extra-card-item__feature {
+  @media (min-width: $tablet-width) {
     width: 132px;
   }
 }

@@ -12,10 +12,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .cat-data {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -37,19 +35,16 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
-}
 
-@media (min-width: $tablet-width) {
-  .cat-data__name-input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 570px;
     height: 52px;
+    margin-bottom: 22px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .cat-data__name-input {
+  @media (min-width: $desktop-width) {
     width: 509px;
   }
 }
@@ -70,19 +65,16 @@
   margin-left: 9px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
-}
 
-@media (min-width: $tablet-width) {
-  .cat-data__weight-input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 542px;
     height: 52px;
+    margin-bottom: 22px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .cat-data__weight-input {
+  @media (min-width: $desktop-width) {
     width: 481px;
   }
 }
@@ -108,27 +100,15 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
-}
 
-@media (min-width: $tablet-width) {
-  .cat-data__name-input,
-  .cat-data__weight-input,
-  .cat-data__age-input {
-    margin-bottom: 22px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .cat-data__age-input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 500px;
     height: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .cat-data__age-input {
+  @media (min-width: $desktop-width) {
     width: 439px;
   }
 }

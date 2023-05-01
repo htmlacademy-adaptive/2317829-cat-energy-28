@@ -12,10 +12,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .optionally {
+  @media (min-width: $tablet-width) {
     margin-top: 65px;
     font-size: 20px;
     line-height: 30px;
@@ -32,10 +30,8 @@
   color: #000000;
   text-transform: none;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .optionally__title {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 100%;
     margin-bottom: 57px;
@@ -52,16 +48,14 @@
   width: 100vw;
   left: 100%;
   margin-left: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .optionally__title::after {
+  @media (min-width: $tablet-width) {
     top: 22px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .optionally__title::before {
+.optionally__title::before {
+  @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
     display: flex;
@@ -78,18 +72,14 @@
   list-style: none;
   padding: 0;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .optionally__list {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
     gap: 15px 100px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .optionally__list {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }

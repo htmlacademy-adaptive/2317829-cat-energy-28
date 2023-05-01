@@ -1,11 +1,9 @@
-@media (min-width: $tablet-width) {
-  .slider {
+.slider {
+  @media (min-width: $tablet-width) {
     margin-left: 55px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .slider {
+  @media (min-width: $desktop-width) {
     margin-left: 120px;
   }
 }
@@ -13,17 +11,14 @@
 .slider__range {
   display: flex;
   justify-content: center;
-}
 
-@media (min-width: $tablet-width) {
-  .slider__range {
+  @media (min-width: $tablet-width) {
     width: 560px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider__image--before {
-    // временное решение
+.slider__image--before {
+  @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;
     object-fit: cover;
@@ -31,9 +26,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider__image--after {
-    // временное решение
+.slider__image--after {
+  @media (min-width: $tablet-width) {
     width: 280px;
     height: 512px;
     object-fit: cover;

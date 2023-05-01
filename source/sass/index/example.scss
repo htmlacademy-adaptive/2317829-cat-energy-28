@@ -1,17 +1,13 @@
 .example {
   background-color: #eaeaea;
   margin-top: 50px;
-}
 
-@media (min-width: $tablet-width) {
-  .example {
+  @media (min-width: $tablet-width) {
     border-top: 1px solid #e6e6e6;
     background: linear-gradient(to bottom, #ffffff 610px, #eaeaea 0%);
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example {
+  @media (min-width: $desktop-width) {
     border-top: 0;
     background: linear-gradient(to bottom, #ffffff 165px, #eaeaea 0%);
   }
@@ -21,18 +17,14 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 25px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__wrapper {
+  @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 55px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example__wrapper {
+  @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
     display: flex;
@@ -48,41 +40,34 @@
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 100%;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example__title {
+  @media (min-width: $desktop-width) {
     margin-bottom: 150px;
   }
 }
 
 .example__text {
   max-width: 280px;
-}
 
-@media (min-width: $tablet-width) {
-  .example__text {
+  @media (min-width: $tablet-width) {
     max-width: 708px;
     font-size: 16px;
     line-height: 24px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example__text {
+  @media (min-width: $desktop-width) {
     max-width: 436px;
   }
 }
 
 .example__expenses {
   margin: 0;
+  margin-top: 10px;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 10px;
@@ -94,10 +79,8 @@
   word-wrap: break-word;
   text-transform: uppercase;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .example__expenses {
+  @media (min-width: $tablet-width) {
     display: block;
     width: 174px;
     font-size: 20px;
@@ -109,18 +92,18 @@
     bottom: 90px;
     text-align: right;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .example__expenses {
+  @media (min-width: $desktop-width) {
     width: 350px;
     left: 0;
     bottom: 0;
     top: 15px;
     text-align: left;
   }
+}
 
-  .example__amount {
+.example__amount {
+  @media (min-width: $desktop-width) {
     margin-left: 40px;
   }
 }

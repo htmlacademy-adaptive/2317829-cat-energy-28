@@ -13,10 +13,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-top: 65px;
@@ -34,10 +32,8 @@
   color: #000000;
   text-transform: none;
   position: relative;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info__title {
+  @media (min-width: $tablet-width) {
     width: 518px;
     font-size: 36px;
     line-height: 100%;
@@ -55,16 +51,14 @@
   width: 100vw;
   left: 100%;
   margin-left: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info__title::after {
+  @media (min-width: $tablet-width) {
     top: 22px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .owner-info__title::before {
+.owner-info__title::before {
+  @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
     display: flex;
@@ -80,16 +74,12 @@
 .owner-info__input-coupler {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info__input-coupler {
+  @media (min-width: $tablet-width) {
     flex-direction: column;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .owner-info__input-coupler {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     flex-direction: row;
     justify-content: space-between;
@@ -112,20 +102,16 @@
   margin-left: 8px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info__email-input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 548px;
     height: 52px;
     margin-left: 17px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .owner-info__email-input {
+  @media (min-width: $desktop-width) {
     width: 486px;
   }
 }
@@ -146,20 +132,16 @@
   margin-left: 8px;
   margin-bottom: 25px;
   border: 1px solid #e7e7e7;
-}
 
-@media (min-width: $tablet-width) {
-  .owner-info__telephone-input {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     width: 529px;
     height: 52px;
     margin-left: 15px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .owner-info__telephone-input {
+  @media (min-width: $desktop-width) {
     width: 467px;
   }
 }

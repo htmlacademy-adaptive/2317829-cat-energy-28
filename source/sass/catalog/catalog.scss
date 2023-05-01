@@ -2,18 +2,14 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog {
+  @media (min-width: $tablet-width) {
     padding-top: 67px;
     padding-left: 30px;
     padding-right: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .catalog {
+  @media (min-width: $desktop-width) {
     padding-top: 74px;
     padding-left: 110px;
     padding-right: 110px;
@@ -28,10 +24,8 @@
   font-weight: 400;
   line-height: 100%;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
   }
 }
@@ -40,19 +34,15 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
 
-@media (min-width: $tablet-width) {
-  .catalog__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     width: 708px;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .catalog__list {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }

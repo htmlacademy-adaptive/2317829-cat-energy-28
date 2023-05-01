@@ -5,18 +5,14 @@
 .instruction__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .instruction__wrapper {
+  @media (min-width: $tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .instruction__wrapper {
+  @media (min-width: $desktop-width) {
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -31,10 +27,8 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-}
 
-@media (min-width: $tablet-width) {
-  .instruction__title {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 100%;
   }
@@ -43,11 +37,8 @@
 .instruction__text {
   margin: 0;
   max-width: 200px;
-}
 
-
-@media (min-width: $tablet-width) {
-  .instruction__text {
+  @media (min-width: $tablet-width) {
     max-width: 245px;
     font-size: 16px;
     line-height: 24px;
@@ -59,20 +50,16 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
 
-@media (min-width: $tablet-width) {
-  .instruction__list {
+  @media (min-width: $tablet-width) {
     counter-reset: my-counter;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 633px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .instruction__list {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
@@ -82,10 +69,8 @@
   padding-left: 80px;
   position: relative;
   margin-bottom: 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .instruction__item {
+  @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-top: 100px;
     width: 250px;
@@ -93,8 +78,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .instruction__item::after {
+.instruction__item::after {
+  @media (min-width: $tablet-width) {
     content: counter(my-counter);
     counter-increment: my-counter;
     font-family: "Oswald", "Arial", sans-serif;
@@ -120,11 +105,8 @@
   background-color: #68b738;
   background-repeat: no-repeat;
   background-position: center center;
-}
 
-
-@media (min-width: $tablet-width) {
-  .instruction__item::before {
+  @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
   }
@@ -132,25 +114,32 @@
 
 .instruction__item--icon-leaf::before {
   background-image: url("../img/instruction-leaf.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 30px 30px;
+  }
 }
 
 .instruction__item--icon-powder::before {
   background-image: url("../img/instruction-powder.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 30px 30px;
+  }
 }
 
 .instruction__item--icon-eat::before {
   background-image: url("../img/instruction-eat.svg");
+
+  @media (min-width: $tablet-width) {
+    background-size: 30px 30px;
+  }
 }
 
 .instruction__item--icon-clock::before {
   background-image: url("../img/instruction-clock.svg");
-}
 
-@media (min-width: $tablet-width) {
-  .instruction__item--icon-leaf::before,
-  .instruction__item--icon-powder::before,
-  .instruction__item--icon-eat::before,
-  .instruction__item--icon-clock::before {
+  @media (min-width: $tablet-width) {
     background-size: 30px 30px;
   }
 }

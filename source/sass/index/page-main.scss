@@ -9,16 +9,12 @@
   min-width: 320px;
   min-height: 302px;
   z-index: -1;
-}
 
-@media (min-width: $tablet-width) {
-  .page-main::before {
+  @media (min-width: $tablet-width) {
     display: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-main::before {
+  @media (min-width: $desktop-width) {
     display: block;
     width: 50%;
     min-height: 696px;

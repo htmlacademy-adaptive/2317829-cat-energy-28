@@ -1,20 +1,16 @@
 .more-items {
   padding-bottom: 30px;
   border-bottom: 1px solid #e6e6e6;
-}
 
-@media (min-width: $tablet-width) {
-  .more-items {
+  @media (min-width: $tablet-width) {
     width: 324px;
     height: 429px;
     border: 1px solid #e6e6e6;
     padding: 0 38px 38px 38px;
     margin-top: 142px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .more-items {
+  @media (min-width: $desktop-width) {
     width: 245px;
   }
 }
@@ -31,21 +27,16 @@
   text-transform: uppercase;
   color: #111111;
   position: relative;
-}
 
-
-@media (min-width: $tablet-width) {
-  .more-items__title {
+  @media (min-width: $tablet-width) {
     margin-top: 150px;
     font-size: 20px;
     line-height: 22px;
     width: 134px;
     margin-left: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .more-items__title {
+  @media (min-width: $desktop-width) {
     margin-left: 13px;
   }
 }
@@ -59,10 +50,8 @@
   height: 30px;
   left: 120px;
   bottom: 40px;
-}
 
-@media (min-width: $tablet-width) {
-  .more-items__title::before {
+  @media (min-width: $tablet-width) {
     background-image: url("../img/catalog/plus-768.svg");
     width: 60px;
     height: 60px;
@@ -78,37 +67,29 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .more-items__text {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
     width: 165px;
     margin-left: 38px;
     margin-top: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .more-items__text {
+  @media (min-width: $desktop-width) {
     margin-left: 0;
   }
 }
 
 .more-items__button {
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .more-items__button {
+  @media (min-width: $tablet-width) {
     width: 248px;
     margin-top: 52px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .more-items__button {
+  @media (min-width: $desktop-width) {
     width: 169px;
   }
 }
