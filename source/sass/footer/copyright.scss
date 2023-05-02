@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -19,4 +23,8 @@
   font-size: 16px;
   line-height: 19px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 28px;
+  }
 }

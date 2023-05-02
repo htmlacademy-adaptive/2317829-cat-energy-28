@@ -12,6 +12,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-data__name-input {
@@ -30,6 +35,18 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 570px;
+    height: 52px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 509px;
+  }
 }
 
 .cat-data__weight-input {
@@ -48,6 +65,18 @@
   margin-left: 9px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 542px;
+    height: 52px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+  }
 }
 
 .cat-data__weight-input::-webkit-outer-spin-button,
@@ -71,6 +100,17 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 500px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 439px;
+  }
 }
 
 .cat-data__age-input::-webkit-outer-spin-button,

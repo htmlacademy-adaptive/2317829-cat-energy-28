@@ -1,4 +1,37 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    margin-left: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 120px;
+  }
+}
+
 .slider__range {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
+}
+
+.slider__image--before {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    height: 512px;
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+.slider__image--after {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    height: 512px;
+    object-fit: cover;
+    object-position: right;
+    margin-left: -4px;
+  }
 }

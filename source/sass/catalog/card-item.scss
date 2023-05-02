@@ -2,18 +2,52 @@
   padding-bottom: 25px;
   padding-top: 25px;
   border-bottom: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 511px;
+    padding-bottom: 38px;
+    padding-left: 39px;
+    padding-right: 37px;
+    background: linear-gradient(to bottom, #ffffff 82px, #f2f2f2 0%);
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .card-item:first-child {
   border-top: 1px solid #ededed;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
 }
 
 .card-item__description {
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .card-item__wrapper {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .card-item__link {
@@ -27,6 +61,14 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 28px;
+    width: 156px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .card-item__table {
@@ -35,6 +77,16 @@
   width: 140px;
   margin-top: 18px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    font-size: 16px;
+    border-collapse: collapse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .card-item__feature {
@@ -46,6 +98,34 @@
   padding: 0;
 }
 
+.card-item__table td {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 .card-item__button {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+.card-item__image {
+  @media (min-width: $tablet-width) {
+    margin-top: -30px;
+    width: 168px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.card-item__image-link {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
