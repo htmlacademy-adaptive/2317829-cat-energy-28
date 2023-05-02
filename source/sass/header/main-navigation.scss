@@ -1,5 +1,5 @@
 .main-navigation__list {
-  width: 280px;
+  width: 320px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -23,10 +23,18 @@
   padding-bottom: 22px;
   border-top: 1px solid #e6e6e6;
 
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 10px;
     padding-bottom: 5px;
     border-top: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -59,4 +67,56 @@
   @media (min-width: $desktop-width) {
     color: #ffffff;
   }
+}
+
+.main-navigation__link--activ {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.main-navigation--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-navigation--opened {
+  display: block;
+  position: absolute;
+  top: 52.5px;
+  right: 0;
+  background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 2px;
+    top: -2px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-navigation--nojs {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 20px;
+  background-color: #ffffff;
 }

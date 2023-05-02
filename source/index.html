@@ -12,15 +12,16 @@
   <header class="main-header">
     <div class="main-header__wrapper container">
       <a class="main-header__logo-link">
-        <img class="main-header__logo-icon" width="191" height="38" src="img/logo-icon.svg" alt="Логотип CAT ENERGI.">
+        <img class="main-header__logo-icon off-state" width="191" height="38" src="img/logo-icon.svg" alt="Логотип CAT ENERGI.">
       </a>
-      <button class="toggle-navigation" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+      <button class="toggle-navigation toggle-navigation--burger toggle-navigation--nojs" type="button">
+        <span>Открыть меню</span>
       </button>
-      <nav class="main-navigation">
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--main">Главная</a>
+            <a
+              class="main-navigation__link main-navigation__link--main main-navigation__link--activ main-navigation__link--main-activ">Главная</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--main" href="catalog.html">Каталог продукции</a>
@@ -202,6 +203,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script-burger.js"></script>
 </body>
 
 </html>
