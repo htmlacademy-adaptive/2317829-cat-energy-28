@@ -29,3 +29,10 @@
     transition: 0.25s ease-in-out;
   }
 }
+
+.main-header__logo-icon--off-state {
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}

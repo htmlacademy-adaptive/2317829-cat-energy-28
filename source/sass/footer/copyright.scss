@@ -17,6 +17,13 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  color: #666666;
+
+  &:active {
+    opacity: 0.3;
+    color: #68b738;
+    transition: 0.25s ease-in-out;
+  }
 }
 
 .copyright__name {
@@ -26,5 +33,17 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 28px;
+  }
+
+  &:hover+.copyright__icon {
+    color: #68b738;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.copyright__icon {
+  &:hover {
+    color: #68b738;
+    transition: 0.25s ease-in-out;
   }
 }

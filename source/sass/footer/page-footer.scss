@@ -37,7 +37,22 @@
 }
 
 .page-footer__logo-icon {
+  &:hover {
+    opacity: 0.6;
+    transition: 0.25s ease-in-out
+  }
+  &:active {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
+  }
   @media (min-width: $tablet-width) {
     min-width: 142px;
+  }
+}
+
+.page-footer__logo-icon--off-state {
+  &:hover,
+  &:active {
+    opacity: 1;
   }
 }
