@@ -1,6 +1,6 @@
 let toggle = document.querySelector('.toggle-navigation');
 
-toggle.classList.remove('toggle-navigation--nojs');
+toggle.classList.remove('toggle-navigation--no-js');
 
 toggle.addEventListener('click', function () {
   toggle.classList.toggle('toggle-navigation--burger');
@@ -10,7 +10,7 @@ toggle.addEventListener('click', function () {
 let mainNavigation = document.querySelector('.main-navigation ');
 let toggleNavigation = document.querySelector('.toggle-navigation');
 
-mainNavigation.classList.remove('main-navigation--nojs');
+mainNavigation.classList.remove('main-navigation--no-js');
 
 toggleNavigation.addEventListener('click', function () {
   if (mainNavigation.classList.contains('main-navigation--closed')) {
