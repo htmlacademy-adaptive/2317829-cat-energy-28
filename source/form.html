@@ -46,15 +46,15 @@
             <fieldset class="selection__cat-data cat-data">
               <legend class="visually-hidden">Информация о коте</legend>
               <label class="cat-data__name" for="cat-name">Имя:*
-                <input class="cat-data__name-input" type="text" name="Cat name" id="cat-name" placeholder="Барсик"
+                <input class="cat-data__name-input" type="text" name="cat name" id="cat-name" placeholder="Барсик"
                   required>
               </label>
               <label class="cat-data__weight" for="cat-weight">Вес (кг):*
-                <input class="cat-data__weight-input" type="number" name="Cat weight" id="cat-weight" min="0" max="25"
+                <input class="cat-data__weight-input" type="number" name="cat weight" id="cat-weight" min="0" max="25"
                   placeholder="7" required>
               </label>
               <label class="cat-data__age" for="cat-age">Возраст (лет):
-                <input class="cat-data__age-input" type="number" name="Cat age" id="cat-age" min="0" max="30"
+                <input class="cat-data__age-input" type="number" name="cat age" id="cat-age" min="0" max="30"
                   placeholder="7">
               </label>
             </fieldset>
@@ -63,22 +63,22 @@
               <ul class="program-target__radio-list">
                 <li class="program-target__radio-item">
                   <label class="program-target__slim" for="program-target-slim">
-                    <input class="program-target__input" type="radio" name="Program target" id="program-target-slim"
-                      value="Slim" checked>
+                    <input class="program-target__input" type="radio" name="program target" id="program-target-slim"
+                      value="slim" checked>
                     <span class="program-target__name">Похудение</span>
                   </label>
                 </li>
                 <li class="program-target__radio-item">
                   <label class="program-target__pro" for="program-target-pro">
-                    <input class="program-target__input" type="radio" name="Program target" id="program-target-pro"
-                      value="Pro">
+                    <input class="program-target__input" type="radio" name="program target" id="program-target-pro"
+                      value="pro">
                     <span class="program-target__name">Набор массы</span>
                   </label>
                 </li>
                 <li class="program-target__radio-item">
                   <label class="program-target__advice" for="program-target-advice">
-                    <input class="program-target__input" type="radio" name="Program target" id="program-target-advice"
-                      value="Advice">
+                    <input class="program-target__input" type="radio" name="program target" id="program-target-advice"
+                      value="advice">
                     <span class="program-target__name">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
@@ -89,46 +89,50 @@
             <legend class="owner-info__title">Контактные данные (владельца кота)</legend>
             <div class="owner-info__input-coupler">
               <label class="owner-info__email" for="owner-info-email">E-mail:*
-                <input class="owner-info__email-input" type="email" name="E-mail" id="owner-info-email"
+                <input class="owner-info__email-input" type="email" name="e-mail" id="owner-info-email"
                   placeholder="kuklachev@gmail.com" required>
+                <svg class="owner-info__email-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </label>
               <label class="owner-info__telephone" for="owner-info-telephone">Телефон:*
-                <input class="owner-info__telephone-input" type="tel" name="Phone" id="owner-info-telephone"
-                  placeholder="8 (960) 900-60-90" required>
+                <input class="owner-info__telephone-input" type="tel" name="phone" id="owner-info-telephone "
+                  placeholder="8 (960) 900-60-90" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                  required>
+                <svg class="owner-info__telephone-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 10H18.5M18.5 10L16 7.5M18.5 10L16 12.5M8.5 2.5V7.5H5.5V12.5H8.5V17.5H6C4.5 17.5 3.5 16.5 3.5 15V5C3.5 3.5 4.5 2.5 6 2.5H8.5Z"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </label>
             </div>
           </fieldset>
           <fieldset class="selection__comment-area comment-area">
             <legend class="comment-area__title">Комментарий</legend>
-            <textarea class="comment-area__comment" name="Сomment"
+            <textarea class="comment-area__comment" name="comment"
               placeholder="Раccкажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="selection__optionally optionally">
             <legend class="optionally__title">Дополнительно</legend>
             <ul class="optionally__list">
               <li class="optionally__checkbox-item">
-                <label class="optionally__sugar-substitute">
-                  <input type="checkbox" name="Sugar substitute" checked>
-                  <span class="optionally__product-name">Сахарозаменитель</span>
-                </label>
+                <input class="optionally__checkbox" id="sugar-substitute" type="checkbox" name="sugar substitute"
+                  checked>
+                <label class="optionally__name" for="sugar-substitute">Сахарозаменитель</label>
               </li>
               <li class="optionally__checkbox-item">
-                <label class="optionally__water">
-                  <input type="checkbox" name="Water">
-                  <span class="optionally__product-name">Питьевая вода</span>
-                </label>
+                <input class="optionally__checkbox" id="water" type="checkbox" name="water">
+                <label class="optionally__name" for="water">Питьевая вода</label>
               </li>
               <li class="optionally__checkbox-item">
-                <label class="optionally__milk">
-                  <input type="checkbox" name="Milk">
-                  <span class="optionally__product-name">Молоко</span>
-                </label>
+                <input class="optionally__checkbox" id="milk" type="checkbox" name="milk">
+                <label class="optionally__name" for="milk">Молоко</label>
               </li>
               <li class="optionally__checkbox-item">
-                <label class="optionally__vitamins">
-                  <input type="checkbox" name="Vitamins">
-                  <span class="optionally__product-name">Витамины</span>
-                </label>
+                <input class="optionally__checkbox" id="vitamins" type="checkbox" name="vitamins">
+                <label class="optionally__name" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>

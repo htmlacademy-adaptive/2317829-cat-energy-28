@@ -84,6 +84,17 @@
   border: 1px solid #e7e7e7;
   resize: none;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;

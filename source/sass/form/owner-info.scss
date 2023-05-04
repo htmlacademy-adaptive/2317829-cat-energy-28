@@ -86,6 +86,21 @@
   }
 }
 
+.owner-info__email {
+  position: relative;
+}
+
+.owner-info__email-icon {
+  position: absolute;
+  top: 23%;
+  left: 88%;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    left: 93%;
+  }
+}
+
 .owner-info__email-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -96,12 +111,50 @@
   color: #444444;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 14px;
+  padding-right: 40px;
   width: 218px;
   height: 45px;
   margin-left: 8px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+  &:focus:invalid + .owner-info__email-icon {
+    color: #ff8282;
+  }
+
+  &:valid + .owner-info__email-icon,
+  &:focus:valid + .owner-info__telephone-icon {
+    color: #68b738;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -116,6 +169,22 @@
   }
 }
 
+.owner-info__telephone {
+  position: relative;
+}
+
+.owner-info__telephone-icon {
+  position: absolute;
+  top: 19%;
+  left: 88%;
+  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    left: 93%;
+  }
+}
+
+
 .owner-info__telephone-input {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -126,12 +195,50 @@
   color: #444444;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 14px;
+  padding-right: 40px;
   width: 201px;
   height: 45px;
   margin-left: 8px;
   margin-bottom: 25px;
   border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+  &:focus:invalid + .owner-info__telephone-icon {
+    color: #ff8282;
+  }
+
+  &:valid + .owner-info__telephone-icon,
+  &:focus:valid + .owner-info__telephone-icon {
+    color: #68b738;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

@@ -22,19 +22,19 @@
     color: rgba(255, 255, 255, 0.3);
     transition: 0.25s ease-in-out;
   }
-}
 
-.button--light {
-  color: #444444;
-  background-color: #f2f2f2;
+  &--light {
+    color: #444444;
+    background-color: #f2f2f2;
 
-  &:hover {
-    background: #ebebeb;
-    transition: 0.25s ease-in-out;
-  }
+    &:hover {
+      background: #ebebeb;
+      transition: 0.25s ease-in-out;
+    }
 
-  &:active {
-    color: rgba(17, 17, 17, 0.3);
-    transition: 0.25s ease-in-out;
+    &:active {
+      color: rgba(17, 17, 17, 0.3);
+      transition: 0.25s ease-in-out;
+    }
   }
 }

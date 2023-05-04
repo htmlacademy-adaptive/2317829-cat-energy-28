@@ -52,17 +52,20 @@
 
 .selection__form-submit-wrapper {
   display: block;
+  margin-top: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 533px;
-    margin-top: 15px;
+    margin-top: 34px;
     margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
     width: 826px;
+    margin-top: 61px;
+    margin-bottom: 82px;
   }
 }
 
