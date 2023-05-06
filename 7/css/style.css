@@ -48,6 +48,7 @@ img {
 .page {
   height: 100%;
 }
+
 .page__body {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
@@ -104,6 +105,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
   transition: 0.25s ease-in-out;
 }
+
 .button--light {
   color: #444444;
   background-color: #f2f2f2;
@@ -1291,7 +1293,7 @@ img {
   }
 }
 
-.slider__control {
+.slider__bar {
   position: absolute;
   width: 4px;
   height: 100%;
@@ -1302,13 +1304,13 @@ img {
   cursor: col-resize;
   z-index: 2;
 }
-.slider__control:hover {
+.slider__bar:hover {
   background-color: #68b738;
 }
-.slider__control:active {
+.slider__bar:active {
   background-color: #9ecc82;
 }
-.slider__control::after {
+.slider__bar::after {
   content: "";
   position: absolute;
   width: 40px;
@@ -1318,20 +1320,20 @@ img {
   top: 46%;
   border: 2px solid #666666;
   border-radius: 25px;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%23666666'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  background-image: url("../img/index/slider-arrows-default.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
   z-index: 2;
   cursor: col-resize;
 }
-.slider__control:hover::after {
+.slider__bar:hover::after {
   border: 2px solid #68b738;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%2368B738'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
+  background-image: url("../img/index/slider-arrows-hover.svg");
 }
-.slider__control:active::after {
+.slider__bar:active::after {
   border: 2px solid #9ecc82;
-  background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%239ECC82'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%239ECC82'/%3E%3C/svg%3E%0A");
+  background-image: url("../img/index/slider-arrows-pressed.svg");
 }
 
 .page-catalog {
@@ -2305,6 +2307,17 @@ img {
     box-shadow: 0 0 0 10px #ffffff inset;
   }
 }
+.program-target__input:disabled + .program-target__name {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.program-target__input:not(:disabled) + .program-target__name:hover::before {
+  border-color: #bababa;
+}
+.program-target__input:focus-visible + .program-target__name::before {
+  outline: 2px solid #444444;
+}
+
 .program-target__input + .program-target__name::before {
   content: "";
   display: block;
@@ -2320,16 +2333,6 @@ img {
     width: 40px;
     margin-right: 20px;
   }
-}
-.program-target__input:disabled + .program-target__name {
-  opacity: 0.3;
-  pointer-events: none;
-}
-.program-target__input:not(:disabled) + .program-target__name:hover::before {
-  border-color: #bababa;
-}
-.program-target__input:focus-visible + .program-target__name::before {
-  outline: 2px solid #444444;
 }
 
 .owner-info {
@@ -2796,11 +2799,13 @@ img {
   height: 0;
   margin: 0;
 }
+
 .optionally__checkbox + .optionally__name {
   cursor: pointer;
   display: flex;
   align-items: center;
 }
+
 .optionally__checkbox + .optionally__name::before {
   content: "";
   display: block;
@@ -2818,19 +2823,22 @@ img {
     height: 40px;
   }
 }
+
 .optionally__checkbox:checked + .optionally__name::before {
   border-color: #cdcdcd;
   background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='19' height='15' viewBox='0 0 19 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 11.718L1.3 5.26951L0.25 6.45739L7 14.0938L18.25 1.36648L17.2 0.09375L7 11.718Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
-  background-size: 73%;
+  background-image: url("../img/form/tick.svg");
 }
+
 .optionally__checkbox:not(:disabled) + .optionally__name:hover::before {
   border-color: #bababa;
 }
+
 .optionally__checkbox:disabled + .optionally__name {
   opacity: 0.3;
   pointer-events: none;
 }
+
 .optionally__checkbox:focus-visible + .optionally__name::before {
   outline: 2px solid #444444;
 }

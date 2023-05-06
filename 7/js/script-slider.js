@@ -1,8 +1,8 @@
 (function ($) {
-  var $sliderControl   = $(".slider__control"),
+  var $sliderBar   = $(".slider__bar"),
     $sliderBox = $(".slider__box"),
     $imageLeft = $(".slider__image--left");
-  $sliderControl.draggable({
+  $sliderBar.draggable({
     containment: "parent",
     drag: function () {
       $imageLeft.css({
@@ -15,7 +15,7 @@
     animateTo(eventLeft);
   });
   function animateTo(_left) {
-    $sliderControl.animate({
+    $sliderBar.animate({
       left: _left
     }, 'slow', 'linear');
     $imageLeft.animate({
