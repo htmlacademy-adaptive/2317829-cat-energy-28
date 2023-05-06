@@ -75,22 +75,6 @@
     }
   }
 
-  & + .program-target__name::before {
-    content: "";
-    display: block;
-    margin-right: 15px;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
-
-    @media (min-width: $tablet-width) {
-      height: 40px;
-      width: 40px;
-      margin-right: 20px;
-    }
-  }
-
   &:disabled + .program-target__name {
     opacity: 0.3;
     pointer-events: none;
@@ -102,5 +86,21 @@
 
   &:focus-visible + .program-target__name::before {
     outline: 2px solid #444444;
+  }
+}
+
+.program-target__input + .program-target__name::before {
+  content: "";
+  display: block;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
   }
 }

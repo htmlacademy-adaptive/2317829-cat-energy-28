@@ -1,4 +1,4 @@
-let toggle = document.querySelector('.toggle-navigation');
+const toggle = document.querySelector('.toggle-navigation');
 
 toggle.classList.remove('toggle-navigation--no-js');
 

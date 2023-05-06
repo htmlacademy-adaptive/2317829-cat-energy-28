@@ -57,7 +57,7 @@
   }
 }
 
-.slider__control {
+.slider__bar {
   position: absolute;
   width: 4px;
   height: 100%;
@@ -86,7 +86,7 @@
     top: 46%;
     border: 2px solid #666666;
     border-radius: 25px;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%23666666'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+    background-image: url("../img/index/slider-arrows-default.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
@@ -96,11 +96,12 @@
 
   &:hover::after {
     border: 2px solid #68b738;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%2368B738'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%2368B738'/%3E%3C/svg%3E%0A");
+    background-image: url("../img/index/slider-arrows-hover.svg");
   }
 
   &:active::after {
+
     border: 2px solid #9ecc82;
-    background-image: url("data:image/svg+xml,%3Csvg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 0L0 9L8 18V0Z' fill='%239ECC82'/%3E%3Cpath d='M24 9L16 0V18L24 9Z' fill='%239ECC82'/%3E%3C/svg%3E%0A");
+    background-image: url("../img/index/slider-arrows-pressed.svg");
   }
 }
