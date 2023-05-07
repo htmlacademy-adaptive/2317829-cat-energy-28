@@ -76,32 +76,58 @@
     background-color: #9ecc82;
   }
 
+  &:hover .slider__arrows {
+    color: #68b738;
+
+    &::after {
+      border: 2px solid #68b738;
+    }
+  }
+
+  &:active .slider__arrows {
+    color: #9ecc82;
+
+    &::after {
+      border: 2px solid #9ecc82;
+    }
+  }
+}
+
+.slider__arrows {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  left: 2px;
+  transform: translateX(-50%);
+  top: 48%;
+  color: #666666;
+
   &::after {
     content: "";
     position: absolute;
+    border-radius: 25px;
+    border: 2px solid #666666;
     width: 40px;
     height: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 46%;
-    border: 2px solid #666666;
-    border-radius: 25px;
-    background-image: url("../img/index/slider-arrows-default.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: #ffffff;
-    z-index: 2;
-    cursor: col-resize;
+    left: -32%;
+    bottom: -58%;
+    z-index: -1;
   }
 
-  &:hover::after {
-    border: 2px solid #68b738;
-    background-image: url("../img/index/slider-arrows-hover.svg");
+  &:hover {
+    color: #68b738;
+
+    &::after {
+      border: 2px solid #68b738;
+    }
   }
 
-  &:active::after {
+  &:active {
+    color: #9ecc82;
 
-    border: 2px solid #9ecc82;
-    background-image: url("../img/index/slider-arrows-pressed.svg");
+    &::after {
+      border: 2px solid #9ecc82;
+    }
   }
 }

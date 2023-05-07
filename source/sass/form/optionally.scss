@@ -127,7 +127,7 @@
   background-image: url("../img/form/tick.svg");
 }
 
-.optionally__checkbox:not(:disabled)+.optionally__name:hover::before {
+.optionally__checkbox:not(:disabled) + .optionally__name:hover::before {
   border-color: #bababa;
 }
 
