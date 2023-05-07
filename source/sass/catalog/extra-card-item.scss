@@ -24,8 +24,8 @@
   border-top: 1px solid #ededed;
 }
 
-@media (min-width: $tablet-width) {
-  .extra-card-item__wrapper {
+.extra-card-item__wrapper {
+  @media (min-width: $tablet-width) {
     width: 632px;
     display: flex;
     justify-content: space-between;

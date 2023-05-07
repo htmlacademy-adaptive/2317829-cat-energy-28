@@ -27,37 +27,37 @@
     width: 570px;
     margin: 0;
   }
-}
 
-.programs__item::before {
-  content: "";
-  position: absolute;
-  left: 22px;
-  top: 24px;
-  width: 50px;
-  height: 50px;
-  background-color: #68b738;
-  border-radius: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    border-radius: 50%;
 
-  @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 200px;
-    left: auto;
-    right: 62px;
-    top: 90px;
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 62px;
+      top: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 45px;
+      top: 40px;
+      width: 100px;
+      height: 100px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    left: 45px;
-    top: 40px;
-    width: 100px;
-    height: 100px;
+  &::after {
+    content: "";
+    position: absolute;
   }
-}
-
-.programs__item::after {
-  content: "";
-  position: absolute;
 }
 
 .programs__title {
@@ -83,57 +83,61 @@
   }
 }
 
-.programs__item--slimming::after {
-  content: "";
-  background-image: url("../img/programs-slimming.svg");
-  background-repeat: no-repeat;
-  left: 30px;
-  top: 22px;
-  width: 35px;
-  height: 49px;
+.programs__item--slimming {
+  &::after {
+    content: "";
+    background-image: url("../img/programs-slimming.svg");
+    background-repeat: no-repeat;
+    left: 30px;
+    top: 22px;
+    width: 35px;
+    height: 49px;
 
-  @media (min-width: $tablet-width) {
-    width: 141px;
-    height: 194px;
-    right: 92px;
-    background-size: 141px 194px;
-    left: auto;
-    top: 80px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 141px;
+      height: 194px;
+      right: 92px;
+      background-size: 141px 194px;
+      left: auto;
+      top: 80px;
+    }
 
-  @media (min-width: $desktop-width) {
-    background-size: 71px 97px;
-    width: 71px;
-    height: 97px;
-    left: 60px;
-    top: 36px;
+    @media (min-width: $desktop-width) {
+      background-size: 71px 97px;
+      width: 71px;
+      height: 97px;
+      left: 60px;
+      top: 36px;
+    }
   }
 }
 
-.programs__item--muscle-building::after {
-  content: "";
-  background-image: url("../img/programs-muscle-buildin.svg");
-  background-repeat: no-repeat;
-  left: 13px;
-  top: 35px;
-  width: 67px;
-  height: 28px;
+.programs__item--muscle-building {
+  &::after {
+    content: "";
+    background-image: url("../img/programs-muscle-buildin.svg");
+    background-repeat: no-repeat;
+    left: 13px;
+    top: 35px;
+    width: 67px;
+    height: 28px;
 
-  @media (min-width: $tablet-width) {
-    width: 268px;
-    height: 113px;
-    right: 92px;
-    top: 130px;
-    background-size: 268px 113px;
-    left: 410px;
-  }
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 113px;
+      right: 92px;
+      top: 130px;
+      background-size: 268px 113px;
+      left: 410px;
+    }
 
-  @media (min-width: $desktop-width) {
-    background-size: 134px 57px;
-    width: 134px;
-    height: 57px;
-    left: 26px;
-    top: 57px;
+    @media (min-width: $desktop-width) {
+      background-size: 134px 57px;
+      width: 134px;
+      height: 57px;
+      left: 26px;
+      top: 57px;
+    }
   }
 }
 
@@ -170,8 +174,49 @@
   text-decoration: none;
   color: #000000;
 
+  &::after {
+    content: "";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    width: 24px;
+    height: 12px;
+    background: url("../img/stretch-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: translateY(-50%);
+    transition: 0.25s ease-in-out;
+    background-size: cover;
+  }
+
+  &:hover::after {
+    right: 14px;
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.programs__link--slimming {
+  width: 147px;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+  }
+}
+
+.programs__link--pro {
+  width: 143px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
   }
 }

@@ -1,4 +1,6 @@
 .slider {
+  position: relativea;
+
   @media (min-width: $tablet-width) {
     margin-left: 55px;
   }
@@ -8,30 +10,124 @@
   }
 }
 
-.slider__range {
-  display: flex;
-  justify-content: center;
+.slider__box {
+  position: relative;
+  width: 280px;
+  height: 256px;
+  margin-top: 40px;
+  bottom: 20px;
+  overflow: hidden;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 560px;
+    height: 512px;
   }
 }
 
-.slider__image--before {
+.slider__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.slider__image img {
+  width: 280px;
+  max-width: fit-content;
+
   @media (min-width: $tablet-width) {
-    width: 280px;
+    width: 560px;
     height: 512px;
     object-fit: cover;
-    object-position: left;
   }
 }
 
-.slider__image--after {
+.slider__image--left {
+  width: 50%;
+  background-color: #eaeaea;
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
-    width: 280px;
-    height: 512px;
-    object-fit: cover;
-    object-position: right;
-    margin-left: -4px;
+    background: linear-gradient(to bottom, #ffffff 157px, #eaeaea 0%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, #ffffff 120px, #eaeaea 0%);
+  }
+}
+
+.slider__bar {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background-color: #666666;
+  border-radius: 2px;
+  cursor: col-resize;
+  z-index: 2;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: #9ecc82;
+  }
+
+  &:hover .slider__arrows {
+    color: #68b738;
+
+    &::after {
+      border: 2px solid #68b738;
+    }
+  }
+
+  &:active .slider__arrows {
+    color: #9ecc82;
+
+    &::after {
+      border: 2px solid #9ecc82;
+    }
+  }
+}
+
+.slider__arrows {
+  position: relative;
+  width: 24px;
+  height: 18px;
+  left: 2px;
+  transform: translateX(-50%);
+  top: 48%;
+  color: #666666;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 25px;
+    border: 2px solid #666666;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    left: -32%;
+    bottom: -58%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #68b738;
+
+    &::after {
+      border: 2px solid #68b738;
+    }
+  }
+
+  &:active {
+    color: #9ecc82;
+
+    &::after {
+      border: 2px solid #9ecc82;
+    }
   }
 }

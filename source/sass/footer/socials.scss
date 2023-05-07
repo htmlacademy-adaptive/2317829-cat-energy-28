@@ -26,3 +26,18 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.socials__icon {
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+    transition: 0.25s ease-in-out;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
+  }
+}

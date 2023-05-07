@@ -90,9 +90,11 @@
   width: 100%;
   min-width: 320px;
   height: 362px;
+  margin-bottom: -3px;
 
   @media (min-width: $tablet-width) {
     min-height: 400px;
+    margin-bottom: -3px;
   }
 }
 

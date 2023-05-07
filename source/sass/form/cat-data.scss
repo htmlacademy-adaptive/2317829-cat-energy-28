@@ -36,6 +36,35 @@
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
 
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -65,6 +94,34 @@
   margin-left: 9px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -100,6 +157,34 @@
   margin-left: 10px;
   margin-bottom: 14px;
   border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
