@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>СAT ENERGI - интернет-магазин функционального питания для котов</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
   <script src="js/draggable-jquery-ui-min.js"> </script>
@@ -13,9 +17,12 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper container">
-      <a class="main-header__logo-link">
-        <img class="main-header__logo-icon main-header__logo-icon--off-state" width="191" height="38"
-          src="img/logo-icon.svg" alt="Логотип CAT ENERGI.">
+      <a class="main-header__logo-link main-header__logo-link--off-state">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/header/logo-desktop.svg">
+          <img src="img/header/logo-mobile.svg" width="191" height="38" src="img/logo-icon.svg"
+            alt="Логотип CAT ENERGI.">
+        </picture>
       </a>
       <button class="toggle-navigation toggle-navigation--burger toggle-navigation--no-js" type="button">
         <span>Открыть меню</span>
@@ -44,8 +51,12 @@
       <p class="promo__slogan">
         Занялся собой? Займись котом!
       </p>
-      <img class="promo__image" src="img/promo-banner.png" width="280" height="270"
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/index/promo-banner-desktop.png 1x, img/index/promo-banner-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/index/promo-banner-tablet.png 1x, img/index/promo-banner-tablet@2x.png 2x">
+        <img class="promo__image" src="img/index/promo-banner-mobile.png" srcset="img/index/promo-banner-mobile@2x.png 2x" width="280" height="270"
         alt="Cat Energy Pro «Курица» - функциональное питаеие для котов.">
+      </picture>
       <a class="promo__program-selection button" href="form.html">Подобрать программу</a>
     </section>
     <section class="programs container">
@@ -125,17 +136,24 @@
         <div class="example__slider slider">
           <div class="slider__box">
             <div class="slider__image slider__image--left">
-              <img src="img/fat-boris.png" alt="Кот Борис толстый.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/index/fat-boris-tablet.png 1x, img/index/fat-boris-tablet@2x.png 2x">
+                <img src="img/index/fat-boris-mobile.png" srcset="img/index/fat-boris-mobile@2x.png 2x" width="280" height="256"
+                alt="Кот Борис похудел.">
+              </picture>
             </div>
             <div class="slider__image slider__image--right">
-              <img src="img/skinny-boris.png" alt="Кот Борис похудел.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/index/skinny-boris-tablet.png 1x, img/index/skinny-boris-tablet@2x.png 2x">
+                <img src="img/index/skinny-boris-mobile.png" srcset="img/index/skinny-boris-mobile@2x.png 2x" width="280" height="270"
+                alt="Кот Борис похудел.">
+              </picture>
             </div>
             <div class="slider__bar">
-              <div class="slider__arrows">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
-                  <path fill="currentColor" d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
-                </svg>
-              </div>
+              <svg class="slider__arrows" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"
+                fill="none">
+                <path fill="currentColor" d="M8 0 0 9l8 9V0ZM24 9l-8-9v18l8-9Z" />
+              </svg>
             </div>
           </div>
         </div>
@@ -159,7 +177,7 @@
   <footer class="page-footer ">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo-link">
-        <img class="page-footer__logo-icon page-footer__logo-icon--off-state" src="img/logo.svg" width="128" height="24"
+        <img class="page-footer__logo-icon page-footer__logo-icon--off-state" src="img/footer/logo.svg" width="128" height="24"
           alt="Логотип CAT ENERGI.">
       </a>
       <nav class="page-footer__socials socials">

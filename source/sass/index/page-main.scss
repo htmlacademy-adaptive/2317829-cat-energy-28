@@ -2,13 +2,19 @@
   content: "";
   position: absolute;
   background-color: #63a73a;
-  background-image: url("../img/index-background.jpg");
+  background-image: url("../img/index/promo-background.jpg");
   background-repeat: no-repeat;
+  background-size: 320px 302px;
   background-position: center;
   width: 100%;
   min-width: 320px;
   min-height: 302px;
   z-index: -1;
+  object-fit: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/promo-background@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -21,10 +27,14 @@
     top: 0;
     right: 0;
     left: inherit;
-    background-image: url("../img/index-background-1440.jpg");
+    background-image: url("../img/index/promo-background-desktop.jpg");
     background-color: #63a73a;
     background-position: 0%;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/promo-background-desktop@2x.jpg");
+    }
   }
 }

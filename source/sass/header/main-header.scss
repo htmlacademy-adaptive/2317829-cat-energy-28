@@ -12,27 +12,35 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
   }
 }
 
-.main-header__logo-icon {
-  &:hover {
-    opacity: 0.6;
-    transition: 0.25s ease-in-out;
-  }
+.main-header__logo-link {
+  img {
+    &:hover {
+      opacity: 0.6;
+      transition: 0.25s ease-in-out;
+    }
 
-  &:active {
-    opacity: 0.3;
-    transition: 0.25s ease-in-out;
+    &:active {
+      opacity: 0.3;
+      transition: 0.25s ease-in-out;
+    }
   }
 }
 
-.main-header__logo-icon--off-state {
-  &:hover,
-  &:active {
-    opacity: 1;
+.main-header__logo-link--off-state {
+  img {
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
   }
 }
