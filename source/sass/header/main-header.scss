@@ -20,27 +20,24 @@
 }
 
 .main-header__logo-link {
-  img {
-    &:hover {
-      opacity: 0.6;
-      transition: 0.25s ease-in-out;
-    }
+  &:hover {
+    opacity: 0.6;
+    transition: 0.25s ease-in-out;
+  }
 
-    &:active {
-      opacity: 0.3;
-      transition: 0.25s ease-in-out;
-    }
+  &:active {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
   }
 }
 
-.main-header__logo-link--off-state {
-  img {
-    &:hover {
-      opacity: 1;
-    }
 
-    &:active {
-      opacity: 1;
-    }
+.main-header__logo-link--off-state {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }

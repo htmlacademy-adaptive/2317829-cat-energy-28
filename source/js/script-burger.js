@@ -21,4 +21,3 @@ toggleNavigation.addEventListener('click', function () {
     mainNavigation.classList.remove('main-navigation--opened');
   }
 });
-
