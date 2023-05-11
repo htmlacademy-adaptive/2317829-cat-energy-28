@@ -125,6 +125,7 @@
   border-color: #cdcdcd;
   background-color: #ffffff;
   background-image: url("../img/form/tick.svg");
+  background-size: 75%;
 }
 
 .optionally__checkbox:not(:disabled) + .optionally__name:hover::before {

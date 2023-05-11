@@ -86,7 +86,7 @@
 .programs__item--slimming {
   &::after {
     content: "";
-    background-image: url("../img/programs-slimming.svg");
+    background-image: url("../img/index/programs-slimming.svg");
     background-repeat: no-repeat;
     left: 30px;
     top: 22px;
@@ -115,7 +115,7 @@
 .programs__item--muscle-building {
   &::after {
     content: "";
-    background-image: url("../img/programs-muscle-buildin.svg");
+    background-image: url("../img/index/programs-muscle-buildin.svg");
     background-repeat: no-repeat;
     left: 13px;
     top: 35px;
@@ -181,7 +181,7 @@
     top: 50%;
     width: 24px;
     height: 12px;
-    background: url("../img/stretch-arrow.svg");
+    background: url("../img/index/stretch-arrow.svg");
     background-repeat: no-repeat;
     background-position: right;
     transform: translateY(-50%);

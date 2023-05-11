@@ -113,7 +113,7 @@
 }
 
 .instruction__item--icon-leaf::before {
-  background-image: url("../img/instruction-leaf.svg");
+  background-image: url("../img/index/instruction-leaf.svg");
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;
@@ -121,7 +121,7 @@
 }
 
 .instruction__item--icon-powder::before {
-  background-image: url("../img/instruction-powder.svg");
+  background-image: url("../img/index/instruction-powder.svg");
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;
@@ -129,7 +129,7 @@
 }
 
 .instruction__item--icon-eat::before {
-  background-image: url("../img/instruction-eat.svg");
+  background-image: url("../img/index/instruction-eat.svg");
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;
@@ -137,7 +137,7 @@
 }
 
 .instruction__item--icon-clock::before {
-  background-image: url("../img/instruction-clock.svg");
+  background-image: url("../img/index/instruction-clock.svg");
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;

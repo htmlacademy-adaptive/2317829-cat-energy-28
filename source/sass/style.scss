@@ -6,7 +6,6 @@
 @import "common/page.scss";
 @import "common/container.scss";
 @import "common/button.scss";
-@import "common/invite-cooperation.scss";
 
 // header
 @import "header/main-header.scss";
@@ -39,6 +38,9 @@
 @import "form/owner-info.scss";
 @import "form/comment-area.scss";
 @import "form/optionally.scss";
+
+// iframe
+@import "iframe/invite-cooperation.scss";
 
 // footer
 @import "footer/page-footer.scss";
