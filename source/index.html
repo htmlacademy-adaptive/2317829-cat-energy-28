@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>СAT ENERGI - интернет-магазин функционального питания для котов</title>
+  <title>СAT ENERGI - Интернет-магазин функционального питания для котов</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
   <script src="js/draggable-jquery-ui-min.js"> </script>
 </head>
@@ -52,6 +52,9 @@
         Занялся собой? Займись котом!
       </p>
       <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/index/promo-banner-desktop.webp, img/index/promo-banner-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/index/promo-banner-tablet.webp, img/index/promo-banner-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/index/promo-banner-mobile.webp, img/index/promo-banner-mobile@2x.webp 2x">
         <source media="(min-width: 1440px)"
           srcset="img/index/promo-banner-desktop.png 1x, img/index/promo-banner-desktop@2x.png 2x">
         <source media="(min-width: 768px)"
@@ -140,6 +143,8 @@
           <div class="slider__box">
             <div class="slider__image slider__image--left">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index/fat-boris-tablet.webp, img/index/fat-boris-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/fat-boris-mobile.webp, img/index/fat-boris-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/index/fat-boris-tablet.png 1x, img/index/fat-boris-tablet@2x.png 2x">
                 <img src="img/index/fat-boris-mobile.png" srcset="img/index/fat-boris-mobile@2x.png 2x" width="280"
@@ -148,6 +153,8 @@
             </div>
             <div class="slider__image slider__image--right">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index/skinny-boris-tablet.webp, img/index/skinny-boris-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/index/skinny-boris-mobile.webp, img/index/skinny-boris-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/index/skinny-boris-tablet.png 1x, img/index/skinny-boris-tablet@2x.png 2x">
                 <img src="img/index/skinny-boris-mobile.png" srcset="img/index/skinny-boris-mobile@2x.png 2x"
