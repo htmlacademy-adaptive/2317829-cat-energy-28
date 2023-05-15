@@ -34,7 +34,7 @@
     padding-top: 10px;
     padding-bottom: 5px;
     border-top: 0;
-
+    width: auto;
     &:last-child {
       border-bottom: 0;
     }
@@ -68,6 +68,7 @@
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,13 +84,14 @@
 }
 
 .main-navigation__link--activ {
+
   &:hover,
   &:active {
     opacity: 1;
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 8px;
+    margin-top: 2px;
     border-bottom: 2px solid #68b738;
   }
 }
@@ -136,7 +138,7 @@
 .main-navigation--no-js {
   display: block;
   position: relative;
-  top: 0;
+  top: 1px;
   right: 20px;
-  background-color: #ffffff;
+  margin-top: 11px;
 }
