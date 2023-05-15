@@ -46,8 +46,8 @@
   font-size: 24px;
   line-height: 100%;
   color: #000000;
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin-bottom: 4px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -59,11 +59,12 @@
   display: block;
   font-size: 12px;
   line-height: 100%;
-  width: 85px;
+  width: 82px;
   background-color: #eaeaea;
-  padding-left: 5px;
+  padding-left: 2px;
   margin-left: 19px;
-  margin-bottom: -12px;
+  margin-bottom: -16px;
+  margin-top: 8px;
   text-transform: lowercase;
 
   @media (min-width: $tablet-width) {

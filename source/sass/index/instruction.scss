@@ -20,7 +20,8 @@
 
 .instruction__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-left: 1px;
+  margin-bottom: 42px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -66,9 +67,9 @@
 
 .instruction__item {
   line-height: 18px;
-  padding-left: 80px;
+  padding-left: 81px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -98,8 +99,8 @@
 .instruction__item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 1px;
+  top: -2px;
   width: 60px;
   height: 60px;
   background-color: #68b738;
@@ -122,6 +123,7 @@
 
 .instruction__item--icon-powder::before {
   background-image: url("../img/index/instruction-powder.svg");
+  background-position: 51% 51%;
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;
@@ -138,6 +140,7 @@
 
 .instruction__item--icon-clock::before {
   background-image: url("../img/index/instruction-clock.svg");
+  background-position: 51% 51%;
 
   @media (min-width: $tablet-width) {
     background-size: 30px 30px;
