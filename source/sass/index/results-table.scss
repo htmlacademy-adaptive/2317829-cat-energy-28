@@ -8,6 +8,9 @@
     max-width: 366px;
     margin-top: 54px;
   }
+  @media (min-width: $desktop-width) {
+  margin-bottom: 25px;
+  }
 }
 
 .results-table__weight {

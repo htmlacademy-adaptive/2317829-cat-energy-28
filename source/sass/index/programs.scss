@@ -27,6 +27,7 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin: 0;
+    padding-bottom: 37px;
   }
 
   &::before {
@@ -48,8 +49,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 45px;
-      top: 40px;
+      left: 52px;
+      top: 47px;
       width: 100px;
       height: 100px;
     }
@@ -82,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 125px;
+    margin-left: 161px;
   }
 }
 
@@ -109,8 +110,8 @@
       background-size: 71px 97px;
       width: 71px;
       height: 97px;
-      left: 60px;
-      top: 36px;
+      left: 67px;
+      top: 41px;
     }
   }
 }
@@ -137,8 +138,8 @@
       background-size: 134px 57px;
       width: 134px;
       height: 57px;
-      left: 26px;
-      top: 57px;
+      left: 33px;
+      top: 67px;
     }
   }
 }
@@ -160,7 +161,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 457px;
-    margin-top: 73px;
+    margin-top: 78px;
   }
 }
 
@@ -217,12 +218,20 @@
     padding-top: 25px;
 
     &::after {
-
       top: 40px;
       left: 133px;
-
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+
+    &::after {
+      top: 16px;
+      left: 132px;
+    }
+  }
+
 }
 
 .programs__link--pro {
@@ -234,10 +243,18 @@
     padding-top: 26px;
 
     &::after {
-
       top: 41px;
       left: 129px;
 
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+
+    &::after {
+      top: 16px;
+      left: 128px;
     }
   }
 }

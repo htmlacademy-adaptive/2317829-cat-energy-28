@@ -17,8 +17,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
+    padding-left: 109px;
     padding-right: 110px;
+    padding-top: 26px;
   }
 }
 
@@ -92,6 +93,10 @@
     margin-bottom: 37px;
     margin-right: -1px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
 }
 
 .instruction__item::after {
@@ -106,7 +111,7 @@
     color: #f2f2f2;
     position: relative;
     bottom: 222px;
-    left: 116px;
+    left: 114px;
     z-index: -1;
   }
 }
@@ -132,7 +137,7 @@
   background-image: url("../img/index/instruction-leaf.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: 30px 30px;
+    background-size: 31px 32px;
   }
 }
 
@@ -141,7 +146,7 @@
   background-position: 51% 51%;
 
   @media (min-width: $tablet-width) {
-    background-size: 30px 30px;
+    background-size: 26px 29px;
   }
 }
 
@@ -149,7 +154,7 @@
   background-image: url("../img/index/instruction-eat.svg");
 
   @media (min-width: $tablet-width) {
-    background-size: 30px 30px;
+    background-size: 25px 31px;
   }
 }
 
@@ -158,6 +163,17 @@
   background-position: 51% 51%;
 
   @media (min-width: $tablet-width) {
-    background-size: 30px 30px;
+    background-size: 26px 31px;
+  }
+}
+.instruction__item--icon-leaf::after{
+  @media (min-width: $tablet-width) {
+    left: 119px;
+  }
+}
+
+.instruction__item--icon-powder::after{
+  @media (min-width: $tablet-width) {
+    left: 112px;
   }
 }

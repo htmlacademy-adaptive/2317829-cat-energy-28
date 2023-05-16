@@ -2,7 +2,7 @@
   padding-top: 26px;
 
   @media (min-width: $desktop-width) {
-    max-height: 660px;
+    max-height: 657px;
   }
 }
 
@@ -25,6 +25,11 @@
     color: #000000;
     margin-left: 87px;
     margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 79px;
+    margin-top: 79px;
   }
 }
 
@@ -52,6 +57,12 @@
     margin-top: 41px;
     margin-bottom: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
 }
 
 .promo__image {
@@ -69,8 +80,8 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    left: 10%;
-    bottom: 280px;
+    left: 114px;
+    bottom: 295px;
     margin-bottom: 0;
   }
 }
@@ -97,5 +108,6 @@
 
   @media (min-width: $desktop-width) {
     bottom: 480px;
+    right: 11px;
   }
 }

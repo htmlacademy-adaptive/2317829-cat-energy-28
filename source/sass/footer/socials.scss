@@ -20,6 +20,10 @@
     border: 0;
     height: 37px;
     margin-left: 26px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 25px;
+    }
   }
 }
 
