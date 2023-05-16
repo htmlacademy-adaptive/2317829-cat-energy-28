@@ -6,6 +6,7 @@
   list-style: none;
   text-transform: uppercase;
 
+
   @media (min-width: $tablet-width) {
     width: 440px;
     display: flex;
@@ -32,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
     border-top: 0;
     width: auto;
 
@@ -75,6 +76,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-navigation__link--middle {
+  @media (min-width: $tablet-width) {
+    margin-left: -4px;
   }
 }
 

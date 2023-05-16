@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-    margin-bottom: 132px;
+    margin-bottom: 203px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +29,10 @@
     width: 768px;
     display: flex;
     justify-content: space-between;
+    padding-left: 71px;
+    padding-right: 69px;
+    padding-top: 60px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,7 +72,7 @@
 
   @media (min-width: $tablet-width) {
     width: 160px;
-    margin: 0;
+    margin-top: -3px;
     text-align: right;
     font-size: 16px;
     line-height: 20px;

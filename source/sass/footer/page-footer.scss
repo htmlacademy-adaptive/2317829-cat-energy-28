@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     height: 147px;
+    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +49,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 142px;
+    min-width: 144px;
+    height: 37px;
   }
 }
 

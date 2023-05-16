@@ -16,12 +16,15 @@
   height: 256px;
   margin-top: 40px;
   bottom: 20px;
+  left: 0px;
   overflow: hidden;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
+    bottom: 11px;
+    left: 19px;
   }
 }
 
@@ -49,7 +52,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, #ffffff 157px, #eaeaea 0%);
+    background: linear-gradient(to bottom, #ffffff 151px, #eaeaea 0%);
   }
 
   @media (min-width: $desktop-width) {

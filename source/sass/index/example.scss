@@ -4,8 +4,10 @@
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -33px;
+    padding-bottom: 34px;
     border-top: 1px solid #e6e6e6;
-    background: linear-gradient(to bottom, #ffffff 580px, #eaeaea 0%);
+    background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 0%);
   }
 
   @media (min-width: $desktop-width) {
@@ -20,9 +22,10 @@
   padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 31px;
+    padding-right: 31px;
     padding-bottom: 55px;
+    padding-top: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +49,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 100%;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,8 +94,8 @@
     margin: 0;
     margin-right: 0;
     position: relative;
-    left: 542px;
-    bottom: 90px;
+    left: 532px;
+    bottom: 82px;
     text-align: right;
   }
 
