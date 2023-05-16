@@ -25,6 +25,7 @@
   margin: 0;
   width: 186px;
   margin-bottom: 35px;
+  margin-left: -2px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -45,9 +46,9 @@
   content: "";
   position: absolute;
   display: flex;
-  height: 3px;
+  height: 2px;
   background-color: #68b738;
-  top: 15px;
+  top: 16px;
   width: 100vw;
   left: 100%;
   margin-left: 20px;
@@ -92,7 +93,7 @@
 
 .owner-info__email-icon {
   position: absolute;
-  top: 23%;
+  top: 22%;
   left: 88%;
   color: #222222;
 
@@ -147,12 +148,12 @@
     box-shadow: 0 0 0 1px #444444;
   }
 
-  &:focus:invalid + .owner-info__email-icon {
+  &:focus:invalid+.owner-info__email-icon {
     color: #ff8282;
   }
 
-  &:valid + .owner-info__email-icon,
-  &:focus:valid + .owner-info__telephone-icon {
+  &:valid+.owner-info__email-icon,
+  &:focus:valid+.owner-info__telephone-icon {
     color: #68b738;
   }
 
@@ -231,12 +232,12 @@
     box-shadow: 0 0 0 1px #444444;
   }
 
-  &:focus:invalid + .owner-info__telephone-icon {
+  &:focus:invalid+.owner-info__telephone-icon {
     color: #ff8282;
   }
 
-  &:valid + .owner-info__telephone-icon,
-  &:focus:valid + .owner-info__telephone-icon {
+  &:valid+.owner-info__telephone-icon,
+  &:focus:valid+.owner-info__telephone-icon {
     color: #68b738;
   }
 

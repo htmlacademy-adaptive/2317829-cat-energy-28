@@ -20,7 +20,8 @@
 
 .comment-area__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+  margin-left: -2px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -40,9 +41,9 @@
   content: "";
   position: absolute;
   display: flex;
-  height: 3px;
+  height: 2px;
   background-color: #68b738;
-  top: 15px;
+  top: 14px;
   width: 100vw;
   left: 100%;
   margin-left: 20px;
@@ -69,18 +70,15 @@
 .comment-area__comment {
   width: 280px;
   height: 150px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald","Arial",sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  margin: 0;
-  padding: 0;
-  padding-left: 13px;
-  padding-top: 10px;
-  margin-bottom: 14px;
+  padding: 8px 0 0 15px;
+  margin: 0px 0 23px;
   border: 1px solid #e7e7e7;
   resize: none;
 

@@ -52,7 +52,7 @@
 
 .selection__form-submit-wrapper {
   display: block;
-  margin-top: 20px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -70,6 +70,8 @@
 }
 
 .selection__form-submit {
+  font-size: 16px;
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 100%;
@@ -84,9 +86,7 @@
 
 .selection__form-required {
   line-height: 16px;
-  margin: 0;
-  margin-top: 21px;
-  margin-bottom: 32px;
+  margin: 20px -1px 33px 0px;
   color: #000000;
   text-align: center;
 

@@ -9,7 +9,7 @@
 .main-header__wrapper {
   width: 320px;
   min-height: 65px;
-  padding-top: 10px;
+  padding-top: 11px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -45,5 +45,20 @@
 
   &:active {
     opacity: 1;
+  }
+}
+
+.main-header__logo-icon {
+  width: 190px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
   }
 }

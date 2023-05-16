@@ -22,7 +22,8 @@
 
 .optionally__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+  margin-left: -2px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -42,7 +43,7 @@
   content: "";
   position: absolute;
   display: flex;
-  height: 3px;
+  height: 2px;
   background-color: #68b738;
   top: 15px;
   width: 100vw;
@@ -86,9 +87,13 @@
 }
 
 .optionally__checkbox-item {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
+
+.optionally__checkbox-item:first-child{
+  margin-bottom: 13px;
+}
 
 .optionally__checkbox {
   opacity: 0;
@@ -125,7 +130,7 @@
   border-color: #cdcdcd;
   background-color: #ffffff;
   background-image: url("../img/form/checkbox-tick.svg");
-  background-size: 75%;
+  background-size: 68%;
 }
 
 .optionally__checkbox:not(:disabled) + .optionally__name:hover::before {

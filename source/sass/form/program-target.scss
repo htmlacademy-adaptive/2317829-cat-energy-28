@@ -2,6 +2,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,6 +15,7 @@
   color: #222222;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -36,7 +38,7 @@
   margin: 0;
   height: 116px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
