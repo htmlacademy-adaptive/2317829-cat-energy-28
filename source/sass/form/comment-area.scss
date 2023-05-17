@@ -16,6 +16,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 .comment-area__title {
@@ -33,6 +37,10 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 100%;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 76px;
   }
 }

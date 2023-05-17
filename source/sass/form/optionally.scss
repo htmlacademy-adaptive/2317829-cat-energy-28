@@ -18,6 +18,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+  }
 }
 
 .optionally__title {
@@ -53,6 +57,10 @@
   @media (min-width: $tablet-width) {
     top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 23px;
+  }
 }
 
 .optionally__title::before {
@@ -79,20 +87,26 @@
     grid-template-columns: 250px 250px;
     gap: 19px 94px;
     margin-left: 1px;
+    max-height: 125px;
+
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    height: 40px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 75px;
+    min-height: 40px;
+    margin-left: 0;
   }
 }
 
 .optionally__checkbox-item {
   margin-bottom: 12px;
+  max-height: 40px;
 }
 
 
-.optionally__checkbox-item:first-child{
+.optionally__checkbox-item:first-child {
   margin-bottom: 13px;
 }
 
@@ -104,13 +118,13 @@
   margin: 0;
 }
 
-.optionally__checkbox + .optionally__name {
+.optionally__checkbox+.optionally__name {
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.optionally__checkbox + .optionally__name::before {
+.optionally__checkbox+.optionally__name::before {
   content: "";
   display: block;
   width: 30px;
@@ -127,22 +141,22 @@
   }
 }
 
-.optionally__checkbox:checked + .optionally__name::before {
+.optionally__checkbox:checked+.optionally__name::before {
   border-color: #cdcdcd;
   background-color: #ffffff;
   background-image: url("../img/form/checkbox-tick.svg");
   background-size: 68%;
 }
 
-.optionally__checkbox:not(:disabled) + .optionally__name:hover::before {
+.optionally__checkbox:not(:disabled)+.optionally__name:hover::before {
   border-color: #bababa;
 }
 
-.optionally__checkbox:disabled + .optionally__name {
+.optionally__checkbox:disabled+.optionally__name {
   opacity: 0.3;
   pointer-events: none;
 }
 
-.optionally__checkbox:focus-visible + .optionally__name::before {
+.optionally__checkbox:focus-visible+.optionally__name::before {
   outline: 2px solid #444444;
 }
