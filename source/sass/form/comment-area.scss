@@ -14,7 +14,7 @@
   color: #444444;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 45px;
   }
 }
 
@@ -50,6 +50,7 @@
 
   @media (min-width: $tablet-width) {
     top: 22px;
+    left: calc(100% + 18px);
   }
 }
 
@@ -58,11 +59,11 @@
     content: "";
     position: absolute;
     display: flex;
-    height: 3px;
+    height: 2px;
     background-color: #68b738;
     top: 22px;
     width: 100vw;
-    right: calc(100% + 2px);
+    right: calc(100% + 17px);
     margin-right: 20px;
   }
 }
@@ -70,7 +71,7 @@
 .comment-area__comment {
   width: 280px;
   height: 150px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -99,6 +100,9 @@
     width: 631px;
     height: 174px;
     margin-bottom: 0;
+    margin-left: 1px;
+    padding-left: 18px;
+    padding-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
