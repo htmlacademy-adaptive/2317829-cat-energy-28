@@ -3,7 +3,7 @@
   background-image: url("../img/catalog/cat-box.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 30px;
+  margin-top: 34px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/catalog/cat-box@2x.jpg");
@@ -49,8 +49,8 @@
 
 .promotion__icon {
   position: relative;
-  left: 100px;
-  top: 50px;
+  left: 101px;
+  top: 59px;
 
   @media (min-width: $tablet-width) {
     top: 60px;
@@ -59,9 +59,9 @@
 }
 
 .promotion__text {
-  margin: 0 auto;
-  margin-top: 105px;
-  width: 160px;
+  margin-top: 104px;
+  margin-left: 39px;
+  width: 200px;
   font-size: 16px;
   line-height: 20px;
   display: block;
