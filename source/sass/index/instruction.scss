@@ -166,13 +166,14 @@
     background-size: 26px 31px;
   }
 }
-.instruction__item--icon-leaf::after{
+
+.instruction__item--icon-leaf::after {
   @media (min-width: $tablet-width) {
     left: 119px;
   }
 }
 
-.instruction__item--icon-powder::after{
+.instruction__item--icon-powder::after {
   @media (min-width: $tablet-width) {
     left: 112px;
   }

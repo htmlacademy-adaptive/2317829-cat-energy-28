@@ -88,8 +88,9 @@
     width: 134px;
     text-align: right;
   }
+
   @media (min-width: $desktop-width) {
-  text-align: left;
+    text-align: left;
   }
 }
 
@@ -98,7 +99,7 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-width: 34px;
-text-align: left;
+    width: 34px;
+    text-align: left;
   }
 }

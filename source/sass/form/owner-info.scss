@@ -157,12 +157,12 @@
     box-shadow: 0 0 0 1px #444444;
   }
 
-  &:focus:invalid+.owner-info__email-icon {
+  &:focus:invalid + .owner-info__email-icon {
     color: #ff8282;
   }
 
-  &:valid+.owner-info__email-icon,
-  &:focus:valid+.owner-info__telephone-icon {
+  &:valid + .owner-info__email-icon,
+  &:focus:valid + .owner-info__telephone-icon {
     color: #68b738;
   }
 
@@ -256,12 +256,12 @@
     box-shadow: 0 0 0 1px #444444;
   }
 
-  &:focus:invalid+.owner-info__telephone-icon {
+  &:focus:invalid + .owner-info__telephone-icon {
     color: #ff8282;
   }
 
-  &:valid+.owner-info__telephone-icon,
-  &:focus:valid+.owner-info__telephone-icon {
+  &:valid + .owner-info__telephone-icon,
+  &:focus:valid + .owner-info__telephone-icon {
     color: #68b738;
   }
 
