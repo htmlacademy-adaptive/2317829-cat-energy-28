@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 69px;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -28,6 +28,10 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 95px;
   }
 }
 

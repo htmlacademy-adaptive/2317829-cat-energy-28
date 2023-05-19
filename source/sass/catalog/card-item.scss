@@ -14,6 +14,9 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    background: linear-gradient(to bottom, #ffffff 70px, #f2f2f2 0%);
+    margin-bottom: 74px;
+    padding-bottom: 39px;
   }
 }
 
@@ -68,6 +71,14 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 42px;
+    width: 149px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 5px;
+  }
 }
 
 .card-item__table {
@@ -87,10 +98,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 169px;
+    width: 175px;
+    margin-left: 8px;
+    margin-top: 16px;
   }
 }
-
 
 .card-item__feature {
   padding: 0;
@@ -131,9 +143,16 @@
 .card-item__image {
   @media (min-width: $tablet-width) {
     margin-top: -30px;
-    width: 168px;
-    height: 200px;
+    min-width: 168px;
+    min-height: 200px;
     object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 172px;
+    min-height: 196px;
+    max-height: 196px;
+    margin-left: 3px;
   }
 }
 
