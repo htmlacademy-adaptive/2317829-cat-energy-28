@@ -145,12 +145,15 @@
     margin-top: -30px;
     min-width: 168px;
     min-height: 200px;
+    height: 200px;
+    max-height: 200px;
     object-fit: cover;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 172px;
     min-height: 196px;
+    height: 196px;
     max-height: 196px;
     margin-left: 3px;
   }

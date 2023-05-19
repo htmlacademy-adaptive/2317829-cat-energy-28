@@ -51,11 +51,12 @@
   background-color: #68b738;
   top: 15px;
   width: 100vw;
-  left: calc(100% + 19px);
+  left: 100%;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     top: 22px;
+    left: calc(100% + 19px);
   }
 
   @media (min-width: $desktop-width) {

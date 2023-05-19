@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -420,7 +423,7 @@
         </p>
       </div>
       <div class="invite-cooperation__map">
-        <iframe class="invite-cooperation__google-map"
+        <iframe class="invite-cooperation__google-map" title="CAT ENERGI на карте" loading="lazy"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9191.016012052718!2d30.31261095329799!3d59.93706571329095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1682501822185!5m2!1sru!2sth">
         </iframe>
       </div>
@@ -471,7 +474,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script-burger.js"></script>
+  <script src="js/script-burger.js" defer></script>
 </body>
 
 </html>
