@@ -11,7 +11,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/catalog/cat-box-tablet.jpg");
-    margin-top: 70px;
+    margin-top: 68px;
 
 
     @media (min-resolution: 2dppx) {
@@ -53,8 +53,10 @@
   top: 59px;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
-    left: 80px;
+    top: 58px;
+    left: 76px;
+    width: 85px;
+    height: 82px;
   }
 }
 
@@ -69,9 +71,9 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top: -15px;
-    margin-right: 100px;
+    margin-top: -14px;
     text-align: left;
+    margin-left: 423px;
   }
 
   @media (min-width: $desktop-width) {

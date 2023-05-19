@@ -9,7 +9,7 @@
     border-right: 1px solid #ededed;
     padding-left: 37px;
     padding-right: 37px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,13 +24,11 @@
 
 .extra-card-item:first-child {
   border-top: 1px solid #ededed;
-// position: relative;
-// top: 10px;
 }
 
 .extra-card-item__wrapper {
   @media (min-width: $tablet-width) {
-    width: 632px;
+    width: 630px;
     display: flex;
     justify-content: space-between;
   }
@@ -50,7 +48,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 }
 
@@ -64,7 +62,9 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    width: 223px;
+    width: 228px;
+    margin-top: 17px;
+    margin-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
-    margin-top: 15px;
+    margin-top: 19px;
     margin-bottom: 15px;
   }
 }
@@ -87,7 +87,9 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 132px;
+    width: 134px;
+    text-align: right;
+
   }
 }
 

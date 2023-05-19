@@ -7,7 +7,7 @@
     height: 429px;
     border: 1px solid #e6e6e6;
     padding: 0 38px 38px 38px;
-    margin-top: 142px;
+    margin-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,11 +29,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-top: 180px;
+    margin-top: 158px;
     font-size: 20px;
     line-height: 22px;
     width: 134px;
-    margin-left: 52px;
+    margin-left: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,8 +55,8 @@
     background-image: url("../img/catalog/plus-tablet.svg");
     width: 60px;
     height: 60px;
-    left: 40px;
-    bottom: 85px;
+    left: 36px;
+    bottom: 93px;
   }
 }
 
@@ -72,8 +72,8 @@
     font-size: 16px;
     line-height: 18px;
     width: 165px;
-    margin-left: 38px;
-    margin-top: 30px;
+    margin-left: 41px;
+    margin-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,7 +87,7 @@
 
   @media (min-width: $tablet-width) {
     width: 248px;
-    margin-top: 52px;
+    margin-top: 87px;
   }
 
   @media (min-width: $desktop-width) {
