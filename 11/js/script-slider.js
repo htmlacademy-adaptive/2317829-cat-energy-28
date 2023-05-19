@@ -1,0 +1,1 @@
+!function(e){var a=e(".slider__bar"),t=e(".slider__box"),i=e(".slider__image--left");a.draggable({containment:"parent",drag:function(){i.css({width:parseFloat(e(this).css("left"))+5})}}),t.on("click",(function(e){var n,l=e.pageX-t.offset().left-15;n=l,a.animate({left:n},"slow","linear"),i.animate({width:n},"slow","linear")}))}(jQuery);
