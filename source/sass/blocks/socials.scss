@@ -1,0 +1,58 @@
+.socials {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.socials__list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    height: 37px;
+    margin-left: 26px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 25px;
+    }
+  }
+}
+
+.socials__item {
+  min-width: 50px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 2px;
+}
+
+
+.socials__icon {
+  color: #666666;
+
+  &:hover {
+    color: #68b738;
+    transition: 0.25s ease-in-out;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.socials__link--yotube {
+  margin-left: 12px;
+  margin-right: 12px;
+}

@@ -1,0 +1,90 @@
+.toggle-navigation {
+  position: relative;
+  padding: 0;
+  bottom: 7px;
+  width: 24px;
+  background-color: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.25s ease-in-out;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.25s ease-in-out;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.toggle-navigation span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  font-size: 0;
+  color: transparent;
+  background: #000000;
+}
+
+.toggle-navigation--burger span {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transition: 0.25s ease-in-out;
+    top: -7px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transition: 0.25s ease-in-out;
+    top: 7px;
+  }
+}
+
+.toggle-navigation--cross span {
+  background: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transform: rotate(135deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transform: rotate(-135deg);
+    transition: 0.25s ease-in-out;
+  }
+}
+
+.toggle-navigation--no-js {
+  display: none;
+}

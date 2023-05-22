@@ -1,0 +1,110 @@
+.program-target {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #e7e7e7;
+    width: 630px;
+    margin-top: 45px;
+    margin-left: 2px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.program-target__radio-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 116px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-height: 146px;
+    margin-top: 22px;
+    margin-bottom: 24px;
+  }
+}
+
+.program-target__name {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 27px;
+  }
+}
+
+.program-target__input {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  &:checked + .program-target__name::before {
+    background-color: #68b738;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 0 0 7px #ffffff inset;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: 0 0 0 10px #ffffff inset;
+    }
+  }
+
+  &:disabled + .program-target__name {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &:not(:disabled) + .program-target__name:hover::before {
+    border-color: #bababa;
+  }
+
+  &:focus-visible + .program-target__name::before {
+    outline: 2px solid #444444;
+  }
+}
+
+.program-target__input + .program-target__name::before {
+  content: "";
+  display: block;
+  margin-right: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+}

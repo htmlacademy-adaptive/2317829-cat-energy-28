@@ -1,48 +1,39 @@
-// common blocks
+// common
 @import "common/fonts.scss";
 @import "common/global.scss";
 @import "common/variables.scss";
 @import "common/visually-hidden.scss";
-@import "common/page.scss";
-@import "common/container.scss";
-@import "common/button.scss";
 
-// header
-@import "header/main-header.scss";
-@import "header/toggle-navigation.scss";
-@import "header/main-navigation.scss";
 
-// main index
-@import "index/page-main.scss";
-@import "index/promo.scss";
-@import "index/programs.scss";
-@import "index/instruction.scss";
-@import "index/example.scss";
-@import "index/results-table.scss";
-@import "index/slider.scss";
-
-// main catalog
-@import "catalog/page-catalog.scss";
-@import "catalog/catalog.scss";
-@import "catalog/card-item.scss";
-@import "catalog/more-items.scss";
-@import "catalog/extra-catalog.scss";
-@import "catalog/extra-card-item.scss";
-@import "catalog/promotion.scss";
-
-// main form
-@import "form/page-form.scss";
-@import "form/selection.scss";
-@import "form/cat-data.scss";
-@import "form/program-target.scss";
-@import "form/owner-info.scss";
-@import "form/comment-area.scss";
-@import "form/optionally.scss";
-
-// iframe
-@import "iframe/invite-cooperation.scss";
-
-// footer
-@import "footer/page-footer.scss";
-@import "footer/socials.scss";
-@import "footer/copyright.scss";
+// blocks
+@import "blocks/container.scss";
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/main-header.scss";
+@import "blocks/toggle-navigation.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/programs.scss";
+@import "blocks/instruction.scss";
+@import "blocks/example.scss";
+@import "blocks/results-table.scss";
+@import "blocks/slider.scss";
+@import "blocks/page-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card-item.scss";
+@import "blocks/more-items.scss";
+@import "blocks/extra-catalog.scss";
+@import "blocks/extra-card-item.scss";
+@import "blocks/promotion.scss";
+@import "blocks/page-form.scss";
+@import "blocks/selection.scss";
+@import "blocks/cat-data.scss";
+@import "blocks/program-target.scss";
+@import "blocks/owner-info.scss";
+@import "blocks/comment-area.scss";
+@import "blocks/optionally.scss";
+@import "blocks/invite-cooperation.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";

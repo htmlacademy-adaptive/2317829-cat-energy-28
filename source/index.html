@@ -10,8 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <script src="js/draggable-jquery-ui-min.js"> </script>
+  <link rel="preload" href="fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -19,13 +20,13 @@
     <div class="main-header__wrapper container">
       <a class="main-header__logo-link main-header__logo-link--off-state">
         <picture>
-          <source media="(min-width: 768px)" srcset="img/header/logo-desktop.svg">
-          <img src="img/header/logo-mobile.svg" width="191" height="38" src="img/logo-icon.svg"
-            alt="Логотип CAT ENERGI.">
+          <source media="(min-width: 1440px)" srcset="img/logo/logotype.svg" width="202" height="62">
+          <source media="(min-width: 768px)" srcset="img/logo/logotype.svg" width="174" height="52">
+          <img class="main-header__logo-icon" src="img/logo/logotype-mobile.svg" width="190" height="38" alt="Логотип CAT ENERGI.">
         </picture>
       </a>
       <button class="toggle-navigation toggle-navigation--burger toggle-navigation--no-js" type="button">
-        <span>Открыть меню</span>
+        <span>Открыть главное меню</span>
       </button>
       <nav class="main-navigation main-navigation--closed main-navigation--no-js">
         <ul class="main-navigation__list">
@@ -34,7 +35,7 @@
               class="main-navigation__link main-navigation__link--main main-navigation__link--activ main-navigation__link--index-activ">Главная</a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link main-navigation__link--main" href="catalog.html">Каталог продукции</a>
+            <a class="main-navigation__link main-navigation__link--main " href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-navigation__item">
             <a class="main-navigation__link main-navigation__link--main" href="form.html">Подбор программы</a>
@@ -102,12 +103,13 @@
           </li>
           <li class="instruction__item instruction__item--icon-eat">
             <p class="instruction__text">
-              Замените один-два приема обычной еды на наше фунцкциональное питание.
+              Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="instruction__item instruction__item--icon-clock">
             <p class="instruction__text">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              Уже через месяц наслаждайтесь изменениями к лучшему&thinsp;
+              <br>вашего питомца!
             </p>
           </li>
         </ol>
@@ -126,12 +128,12 @@
           </div>
           <div class="example__results-table results-table">
             <div class="results-table__weight">
-              <span class="results-table__value">5 КГ</span>
-              <span class="results-table__description">снижение веса</span>
+              <span class="results-table__value">5 кг</span>
+              <span class="results-table__description results-table__description--first">снижение веса</span>
             </div>
             <div class="results-table__time">
-              <span class="results-table__value">60 ДНЕЙ</span>
-              <span class="results-table__description">затрачено времени</span>
+              <span class="results-table__value">60 дней</span>
+              <span class="results-table__description results-table__description--second">затрачено времени</span>
             </div>
           </div>
           <p class="example__expenses">
@@ -172,14 +174,14 @@
     </section>
     <section class="invite-cooperation invite-cooperation--index">
       <div class="invite-cooperation__wrapper">
-        <h2 class="invite-cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="invite-cooperation__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
         <p class="invite-cooperation__address">
           ул. Большая Конюшенная, д. 19/8
           <span>Санкт-Петербург</span>
         </p>
       </div>
       <div class="invite-cooperation__map">
-        <iframe class="invite-cooperation__google-map"
+        <iframe class="invite-cooperation__google-map" title="CAT ENERGI на карте" loading="lazy"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9191.016012052718!2d30.31261095329799!3d59.93706571329095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sth!4v1682501822185!5m2!1sru!2sth">
         </iframe>
       </div>
@@ -188,7 +190,7 @@
   <footer class="page-footer ">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo-link">
-        <img class="page-footer__logo-icon page-footer__logo-icon--off-state" src="img/footer/logo.svg" width="128"
+        <img class="page-footer__logo-icon page-footer__logo-icon--off-state" src="img/logo/logo.svg" width="128"
           height="24" alt="Логотип CAT ENERGI.">
       </a>
       <nav class="page-footer__socials socials">
@@ -230,6 +232,8 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="js/draggable-jquery-ui-min.js"></script>
   <script src="js/script-burger.js"></script>
   <script src="js/script-slider.js"></script>
 </body>

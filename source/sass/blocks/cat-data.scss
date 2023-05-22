@@ -1,0 +1,216 @@
+.cat-data {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 2px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.cat-data__name-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 228px;
+  height: 45px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 569px;
+    height: 52px;
+    margin-bottom: 20px;
+    padding-left: 19px;
+    margin-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 509px;
+  }
+}
+
+.cat-data__weight-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 207px;
+  height: 45px;
+  margin-left: 9px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 541px;
+    height: 52px;
+    margin-bottom: 22px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 481px;
+  }
+}
+
+.cat-data__weight-input::-webkit-outer-spin-button,
+.cat-data__weight-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.cat-data__age-input {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  width: 173px;
+  height: 45px;
+  margin-left: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid #e7e7e7;
+  }
+
+  &:hover:not(:focus):invalid {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus:invalid {
+    border: 1px solid #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: none;
+    border-radius: none;
+    border: 1px solid #444444;
+    box-shadow: 0 0 0 1px #444444;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 499px;
+    height: 52px;
+    padding-left: 19px;
+    margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 439px;
+  }
+}
+
+.cat-data__age-input::-webkit-outer-spin-button,
+.cat-data__age-input::-webkit-inner-spin-button {
+  appearance: none;
+}
