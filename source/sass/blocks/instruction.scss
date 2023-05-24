@@ -71,10 +71,8 @@
     counter-reset: my-counter;
     display: flex;
     flex-wrap: wrap;
-
     width: 626px;
     justify-content: space-between;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -84,12 +82,11 @@
 }
 
 .instruction__item {
-
   position: relative;
-    min-height: 60px;
-    padding-top: 3px;
-    padding-left: 80px;
-    margin: 0 0 20px;
+  min-height: 60px;
+  padding-top: 3px;
+  padding-left: 80px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 242px;
@@ -184,4 +181,3 @@
     left: 112px;
   }
 }
-
