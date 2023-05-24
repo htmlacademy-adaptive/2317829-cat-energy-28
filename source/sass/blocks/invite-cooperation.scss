@@ -109,3 +109,18 @@
     bottom: 259px;
   }
 }
+
+.invite-cooperation__map-no-js {
+  display: block;
+  position: relative;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 362px;
+  margin-top: -362px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin-top: -400px;
+  }
+}

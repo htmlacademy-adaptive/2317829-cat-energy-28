@@ -44,6 +44,7 @@
 .instruction__text {
   margin: 0;
   max-width: 200px;
+  word-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     max-width: 245px;
@@ -70,32 +71,34 @@
     counter-reset: my-counter;
     display: flex;
     flex-wrap: wrap;
+    width: 626px;
     justify-content: space-between;
-    width: 633px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin-bottom: 75px;
   }
 }
 
 .instruction__item {
-  line-height: 18px;
-  padding-left: 81px;
   position: relative;
-  margin-bottom: 26px;
+  min-height: 60px;
+  padding-top: 3px;
+  padding-left: 80px;
+  margin: 0 0 20px;
 
   @media (min-width: $tablet-width) {
+    width: 242px;
+    padding-top: 110px;
     padding-left: 0;
-    padding-top: 109px;
-    width: 250px;
-    height: 280px;
-    margin-bottom: 37px;
-    margin-right: -1px;
+    margin-bottom: 133px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 246px;
+    width: 245px;
+    margin-left: 0;
+    margin-bottom: 59px;
   }
 }
 
@@ -106,12 +109,12 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 280px;
+    font-size: 281px;
     line-height: 100%;
     color: #f2f2f2;
-    position: relative;
-    bottom: 222px;
-    left: 114px;
+    position: absolute;
+    top: -39px;
+    left: 113px;
     z-index: -1;
   }
 }
